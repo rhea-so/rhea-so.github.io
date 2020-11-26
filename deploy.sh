@@ -7,7 +7,7 @@ git pull origin main
 git remote set-url --push origin https://rhea-so:$AccessToken@github.com/rhea-so/rhea-so.github.io.git/
 
 git add .
-git commit -m "circle ci"
+git pull --no-commit && git commit -m "circle ci"
 git push -f origin main
 
 echo "deployed successfully"
