@@ -7,7 +7,6 @@ url: "https://rhea-so.github.io"
 twitter_username: dev_rhea
 github_username:  rhea-so
 
-destination: ./output/
 theme: minima
 plugins:
   - jekyll-feed
