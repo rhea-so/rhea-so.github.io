@@ -7,5 +7,6 @@ git pull origin main
 git add .
 git commit -m "circle ci"
 git push -f origin main
+git remove -v
 
 echo "deployed successfully"
