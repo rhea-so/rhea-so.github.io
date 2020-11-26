@@ -16,5 +16,3 @@ plugins:
 exclude:
   - README.md
   - deploy.sh
-  - Gemfile
-  - Gemfile.lock
