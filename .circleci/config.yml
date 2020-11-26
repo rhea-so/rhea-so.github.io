@@ -25,7 +25,7 @@ jobs:
             - vendor/bundle
           key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
 
-      - run: JEKYLL_ENV=production bundle exec jekyll build
+      - run: bundle exec jekyll build
       - deploy:
           name: Deploy Release to GitHub
           command: |
