@@ -34,3 +34,14 @@ exclude:
   - _posts/iot
   - _posts/r
   - _posts/economy
+
+production_url: https://rhea-so.github.io/
+source_url: https://github.com/rhea-so/rhea-so.github.io
+
+safe: False
+lsi: False
+
+username: rhea-so
+repo: rhea-so.github.io
+branch: main
+destination: main
