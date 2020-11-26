@@ -7,6 +7,30 @@ url: "https://rhea-so.github.io"
 twitter_username: dev_rhea
 github_username:  rhea-so
 
+destination: ./output/
 theme: minima
 plugins:
   - jekyll-feed
+
+# exclude는 Jekyll컴파일 시 destination에 포함될 필요가
+# 없는것들을 명시한다. (node_modules와 필요없는 것들은 제외)
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
+  - node_modules
+  - assets/css
+  - assets/images
+  - _posts/angular
+  - _posts/et-cetera
+  - _posts/python
+  - _posts/typescript
+#  - _posts/jekyll
+  - _posts/iot
+  - _posts/r
+  - _posts/economy
