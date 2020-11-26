@@ -8,5 +8,5 @@ git add .
 git commit -m "circle ci"
 git push -f origin main
 git remote -v
-
+echo usd\$
 echo "deployed successfully"
