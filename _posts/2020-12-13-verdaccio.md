@@ -39,14 +39,14 @@ verdaccio # 1) PM2가 설치되어 있지 않은 경우
 pm2 start verdaccio # 2) PM2가 설치되어 있는 경우
 ```
 
-![설치_후_첫_실행](/assets/2020-12-13-verdaccio/첫실행.png)
+![설치_후_첫_실행](/assets/2020-12-13-verdaccio/첫실행.jpeg)
 
 > 성공적으로 띄운 모습
 > verdaccio는 기본적으로 `4873`번 포트를 사용합니다.  
 
 웹 브라우저로 접속을 하고 싶으신 경우, [http://localhost:4873](http://localhost:4873)로 들어가주세요.
 
-![verdaccio_main](/assets/2020-12-13-verdaccio/main.png)
+![verdaccio_main](/assets/2020-12-13-verdaccio/main.jpeg)
 
 > 전반적으로 깔끔한 UI를 사용하고 있습니다.
 
