@@ -5,7 +5,7 @@ date:   2020-12-13 15:55:00 +0900
 categories: verdaccio npm node
 ---
 
-> Verdaccio를 이용해 Private한 NPM 저장소를 만드는 방법을 다룹니다
+> Verdaccio를 이용해 Private한 NPM 저장소를 만드는 방법을 소개합니다
 
 
 ## 대상 독자
