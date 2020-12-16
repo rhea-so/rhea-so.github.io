@@ -7,18 +7,19 @@ categories: rabbitmq mq queue message
 
 ## 메시지 큐(Message Queue 이하 MQ)란?
 
-프로세스(프로그램) 간에 데이터를 교환할 때 사용하는 통신 방법 중에 하나로 더 큰 개념으로는 MOM(Message Oriented Middleware : 메시지 지향 미들웨어 이하 MOM)를 의미합니다.  
+프로세스(프로그램) 간에 데이터를 교환할 때 사용하는 통신 방법 중에 하나로,  
+더 큰 개념으로는 MOM(Message Oriented Middleware : 메시지 지향 미들웨어 이하 MOM)를 의미합니다.  
 MOM이란 비동기 메시지를 사용하는 프로그램 간의 데이터 송수신을 의미하는데 MOM을 구현한 시스템을 MQ라고 합니다.  
-MQ는 작업을 늦출 수 있는 유연성을 제공합니다.
- 
+MQ는 작업을 늦출 수 있는 유연성을 제공합니다.  
+  
 메시지를 교환할 때 AMQP(Advanced Message Queuing Protocol 이하 AMQP)을 이용합니다.  
 AMQP는 ISO 응용 계층의 MOM 표준으로 JMS(Java Message Service)와 비교되는데 JMS는 MOM를 자바에서 지원하는 표준 API입니다.  
 JMS는 다른 Java Application 간에 통신은 가능하지만 다른 MOM(AMQP, SMTP 등)끼리는 통신할 수 없습니다.  
 그에 반해 AMQP는 protocol만 일치한다면 다른 AMQP를 사용한 Application과도 통신이 가능합니다.  
-AMQP는 wire-protocol을 제공하는데 이는 octet stream을 이용해서 다른 네트워크 사이에 데이터를 전송할 수 있는 포맷입니다.
+AMQP는 wire-protocol을 제공하는데 이는 octet stream을 이용해서 다른 네트워크 사이에 데이터를 전송할 수 있는 포맷입니다.  
  
  
-## 메시지 큐의 장점
+### 메시지 큐의 장점
 
 * 비동기 : Queue에 넣기 때문에 나중에 처리할 수 있습니다.
 * 비동조 : Application과 분리할 수 있습니다.
@@ -26,7 +27,7 @@ AMQP는 wire-protocol을 제공하는데 이는 octet stream을 이용해서 다
 * 과잉 : 실패할 경우 재실행이 가능합니다
 * 확장성 : 다수의 프로세스들이 큐에 메시지를 보낼 수 있습니다.
  
-## 메시지 큐 사용처
+### 메시지 큐 사용처
 
 메시지 큐는 다음과 같이 다양한 곳에 사용이 가능합니다.
 
@@ -36,7 +37,7 @@ AMQP는 wire-protocol을 제공하는데 이는 octet stream을 이용해서 다
 * 많은 양의 프로세스 처리
 * 메시지 큐 종류
 
-## 대표적인 메시지 큐
+### 대표적인 메시지 큐
 
 * Kafka
 * RabbitMQ
@@ -90,10 +91,12 @@ ActiveMQ는 자바로 만든 오픈소스 메시지 브로커입니다. JMS 1.1�
 * Geronimo, JBoss 4, GlassFish, WebLogic과 같은 인기있는 J2EE 서버들과 함께 테스트됨
 * 고성능의 저널을 사용할 때에 JDBC를 사용하여 매우 빠른 Persistence를 지원
 * REST API를 통해 웹기반 메시징 API를 지원
-* 웹 브라우저가 메시징 도구가 될 수 있도록, Ajax를 통해 순수한 DHTML을 사용한 웹 스트리밍 지원
-
+* 웹 브라우저가 메시징 도구가 될 수 있도록, Ajax를 통해 순수한 DHTML을 사용한 웹 스트리밍 지원  
+  
+  
 -----
-
+  
+  
 이렇게 해서 메시지 큐에 대한 기본적인 개념과 대표적으로 몇 가지 종류를 정리해보았습니다.
  
 * 라운드 트립(Round-trip) : 클라이언트와 서버 간의 데이터 왕복 과정을 의미한다. 라운드 트립이 빈번하다는 것은 클라이언트와 서버 간에 요청과 응답이 빈번하다는 이야기이고, 결국 서버 측의 성능에 그리 좋지 않은 영향을 미친다. 따라서 라운드 트립이 적게 일어나도록 제작되는 것이 바람직하다.
