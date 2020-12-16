@@ -51,7 +51,9 @@ AMQP는 wire-protocol을 제공하는데 이는 octet stream을 이용해서 다
  
 ## RabbitMQ
 
-RabbitMQ는 AMQT 프로토콜을 구현해 놓은 프로그램으로써 빠르고 쉽게 구성할 수 있으며 직관적입니다.
+RabbitMQ는 AMQT 프로토콜을 구현해 놓은 프로그램으로써 빠르고 쉽게 구성할 수 있으며 직관적입니다.  
+[https://blog.dudaji.com/general/2020/05/25/rabbitmq.html](https://blog.dudaji.com/general/2020/05/25/rabbitmq.html)
+
  
 ### 장점
 
