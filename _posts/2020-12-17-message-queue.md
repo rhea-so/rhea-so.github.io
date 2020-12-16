@@ -43,7 +43,8 @@ AMQP는 wire-protocol을 제공하는데 이는 octet stream을 이용해서 다
 * RabbitMQ
 * ActiveMQ
  
-공통적으로 3가지 모두 비동기 통신을 제공하고 보낸 사람과 받는 사람을 분리합니다. 하지만 업무에 따라서 다른 목적을 가지고 있습니다.
+공통적으로 3가지 모두 비동기 통신을 제공하고 보낸 사람과 받는 사람을 분리합니다.  
+하지만 업무에 따라서 다른 목적을 가지고 있습니다.  
  
 성격상 Kafka(Apache)와 RabbitMQ, ActiveMQ(Apache)로 나눌 수 있는데 Kafka는 처리량이 많은 분산 메시징 시스템에 적합하고 RabbitMQ, ActiveMQ는 신뢰성 있는 메시지 브로커가 필요한 경우 적합합니다.  
 여기서 신뢰성은 Kafka에 비해 높은 것이지 Kafka가 신뢰성이 없다는 것은 아닙니다.
