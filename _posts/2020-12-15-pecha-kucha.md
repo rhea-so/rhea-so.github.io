@@ -2,7 +2,7 @@
 layout: post
 title:  "페차쿠차 스타일로 요점만 발표하기"
 date:   2020-12-15 15:55:00 +0900
-categories: pecha-kucha
+categories: 발표
 ---
 
 페차쿠차는 일본어로 '재잘재잘(잡담)'이라는 뜻이다.  
