@@ -1,15 +1,55 @@
-title: 2020 Dev
-email: jeonghyeon.rhea@gmail.com
+# Site settings
+title: 2021 Dev
+url: "https://rhea-so.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+timezone: Asia/Seoul
 description: >-
   Junior Software Engineer Blog
-baseurl: ""
-url: "https://rhea-so.github.io"
+
+# Your information
+email: jeonghyeon.rhea@gmail.com
+author: JeongHyeon Kim
+avatar: "//avatars3.githubusercontent.com/u/25793226?s=460&u=af5553a464bd29c3690143057a8314b1e27857d6&v=4"
+profile: 훌륭한 서비스를 개발하기 위해 열심히 공부 중
 twitter_username: dev_rhea
 github_username:  rhea-so
+profile_links:
+  Email: "mailto:jeonghyeon.rhea@gmail.com"
+  GitHub: "https://github.com/rhea-so"
 
-theme: minima
+excerpt_separator: <!--more-->
+
+header:
+  links:
+    About: /about/
+    Category: /category/
+
+permalink: /archivers/:title
 plugins:
-  - jekyll-feed
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+# https://jekyllrb.com/docs/configuration/#precedence
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
 
 # exclude는 Jekyll컴파일 시 destination에 포함될 필요가
 # 없는것들을 명시한다. (node_modules와 필요없는 것들은 제외)
