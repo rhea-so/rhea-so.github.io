@@ -30,7 +30,8 @@ plugins:
  - jekyll-paginate
  - jekyll-gist
  - jemoji
-
+ - jekyll-sitemap
+ 
 # Build settings
 paginate: 7
 paginate_path: "page:num"
