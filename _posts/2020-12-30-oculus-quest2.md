@@ -3,6 +3,7 @@ layout: post
 title:  "오큘러스 퀘스트2 구매기"
 date:   2020-12-30 01:00:00 +0900
 categories: 일상
+changefreq: daily
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title:  "메시지 큐 알아보기"
 date:   2020-12-17 01:00:00 +0900
 categories: 메시지-브로커
+changefreq: daily
 ---
 
 ## 메시지 큐(Message Queue 이하 MQ)란?

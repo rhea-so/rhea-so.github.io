@@ -3,6 +3,7 @@ layout: post
 title:  "나만의 NPM 저장소 만들기"
 date:   2020-12-13 15:55:00 +0900
 categories: 저장소
+changefreq: daily
 ---
 
 리뉴얼 필요

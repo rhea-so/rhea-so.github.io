@@ -3,6 +3,7 @@ layout: post
 title:  "프로젝트의 목표 설정"
 date:   2021-01-01 13:38:00 +0900
 categories: 번역
+changefreq: daily
 ---
 
 이 포스트는 [Mozilla의 프로젝트 목표 설정](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Thinking_before_coding)의 번역본입니다
