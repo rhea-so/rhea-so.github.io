@@ -3,7 +3,7 @@
   <div class="wrapper">
     <div id="sidebar-toggle">TOC</div>
     <b><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></b>
-    <a class="site-title">&nbsp;- 개발 이야기</a>
+    <a class="site-title" href="{{ site.baseurl }}/">&nbsp;- 개발 이야기</a>
     <nav class="site-nav">
       {% for link in site.header.links %}{% assign url = link[1] %}
       {% assign urlchk = url | split: "/" %}{% if urlchk[0] == '' and urlchk[1] != '' %}{% assign uprefix = site.baseurl
