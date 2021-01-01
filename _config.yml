@@ -21,6 +21,7 @@ excerpt_separator: <!--more-->
 
 header:
   links:
+    Articles: /
     About: /about/
     Category: /category/
 
