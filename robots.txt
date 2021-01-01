@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /privateData/
 
-Sitemap: https://rhea-so.github.io/sitemap.xml
+Sitemap: http://rhea-so.github.io/sitemap.xml
