@@ -9,8 +9,11 @@ layout: default
       {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
 
       <br /><br />
-      <img
-        src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
+      <a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
+        target="_blank">
+        <img
+          src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" />
+      </a>
     </p>
   </header>
 
