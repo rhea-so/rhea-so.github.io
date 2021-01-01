@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "메세지 큐 알아보기 (Message Queue. MQ)"
+title:  "메시지 큐 알아보기"
 date:   2020-12-17 01:00:00 +0900
-categories: rabbitmq mq queue message
+categories: message-queue
 ---
 
 ## 메시지 큐(Message Queue 이하 MQ)란?
