@@ -1,7 +1,7 @@
 # Site settings
 title: 2021 Dev
-url: "https://rhea-so.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+url: "http://rhea-so.github.io"
+baseurl: ""
 timezone: Asia/Seoul
 description: >-
   Junior Software Engineer Blog
