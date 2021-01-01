@@ -1,4 +1,4 @@
-# rhea blog
+[![HitCount](http://hits.dwyl.com/rhea-so/rhea-sogithubio.svg)](http://hits.dwyl.com/rhea-so/rhea-sogithubio)
 
 ## circle ci 참고
 
