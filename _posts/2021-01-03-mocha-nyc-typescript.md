@@ -2,7 +2,7 @@
 layout: post
 title:  "Typescript + Mocha + NYC로 TDD하기"
 date:   2021-01-03 20:45:45 +0900
-categories: TDD
+categories: 개발-방법
 changefreq: daily
 ---
 
