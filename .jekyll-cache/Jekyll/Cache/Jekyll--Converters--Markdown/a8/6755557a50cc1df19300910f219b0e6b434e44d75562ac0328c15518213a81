@@ -1,0 +1,285 @@
+I"S<p>2021년에는 뭘 하면서 살면 좋을지에 대해서 정리해보았습니다</p>
+
+<h2 id="roadmap">Roadmap</h2>
+
+<p><img src="/assets/2021-01-01-planning/roadmap.png" alt="로드맵 이미지" /></p>
+
+<blockquote>
+  <p><a href="https://github.com/kamranahmedse/developer-roadmap">https://github.com/kamranahmedse/developer-roadmap</a></p>
+</blockquote>
+
+<h3 id="인터넷">인터넷</h3>
+
+<ul>
+  <li><a href="/archivers/how-internet-works">인터넷은 어떻게 동작할까요?</a></li>
+  <li><a href="/archivers/what-is-http">HTTP는 무엇일까요?</a></li>
+  <li><a href="/archivers/how-browser-works">브라우저와 동작 원리</a></li>
+  <li><a href="/archivers/how-dns-works">DNS와 작동 원리</a></li>
+  <li><a href="/archivers/what-is-domain-name">도메인 네임은 무엇일까요?</a></li>
+  <li><a href="/archivers/what-is-hosting">호스팅은 무엇일까요?</a></li>
+  <li><a href="/archivers/how-web-works">웹의 동작 방식</a></li>
+  <li><a href="/archivers/what-is-osi-model">OSI 모형</a></li>
+</ul>
+
+<h3 id="기본적인-프론트엔드-지식">기본적인 프론트엔드 지식</h3>
+
+<ul>
+  <li><a href="/archivers/what-is-html">HTML</a></li>
+  <li><a href="/archivers/what-is-css">CSS</a></li>
+  <li><a href="/archivers/what-is-javascript">Javascript</a></li>
+</ul>
+
+<h3 id="os-및-일반적인-지식">OS 및 일반적인 지식</h3>
+
+<ul>
+  <li>터미널 사용 방법</li>
+  <li>OS의 일반적인 작동 방식</li>
+  <li>프로세스 관리</li>
+  <li>스레드와 동시성</li>
+  <li>기본적인 터미널 명령어</li>
+  <li>메모리 관리</li>
+  <li>프로세스간 통신(IPC)</li>
+  <li>입출력 관리(I/O) 관리</li>
+  <li>POSIX 기초 (stdin, stdout, stderr, pipes)</li>
+</ul>
+
+<h3 id="언어-배우기">언어 배우기</h3>
+
+<ul>
+  <li>Java</li>
+  <li>C#</li>
+  <li>PHP</li>
+  <li>Javascript</li>
+  <li>Python</li>
+  <li>Ruby</li>
+</ul>
+
+<h3 id="버전-관리">버전 관리</h3>
+
+<ul>
+  <li>Git</li>
+</ul>
+
+<h3 id="저장소-호스팅-서비스">저장소 호스팅 서비스</h3>
+
+<ul>
+  <li>GitHub</li>
+  <li>GitLab</li>
+</ul>
+
+<h3 id="관계형-데이터베이스">관계형 데이터베이스</h3>
+
+<ul>
+  <li>PostgreSQL</li>
+  <li>MySQL</li>
+  <li>MariaDB</li>
+  <li>MS SQL</li>
+  <li>Oracle</li>
+</ul>
+
+<h3 id="nosql-데이터베이스">NoSQL 데이터베이스</h3>
+
+<ul>
+  <li>MongoDB</li>
+  <li>RethinkDB</li>
+  <li>CouchDB</li>
+  <li>DynamoDB</li>
+</ul>
+
+<h3 id="데이터베이스-상세-정보">데이터베이스 상세 정보</h3>
+
+<ul>
+  <li>ORM</li>
+  <li>ACID</li>
+  <li>트랜잭션</li>
+  <li>데이터베이스 정규화</li>
+  <li>인덱스와 작동 방식</li>
+  <li>N+1 문제</li>
+  <li>데이터 레플리케이션</li>
+  <li>샤딩 전략</li>
+  <li>CAP 이론</li>
+</ul>
+
+<h3 id="api에-대해서-배우기">API에 대해서 배우기</h3>
+
+<ul>
+  <li>HATEOAS</li>
+  <li>오픈 API 스펙과 Swagger</li>
+  <li>인증</li>
+  <li>REST</li>
+  <li>JSON APIs</li>
+  <li>SOAP</li>
+  <li>OAuth</li>
+  <li>기본적인 인증</li>
+  <li>토큰 인증</li>
+  <li>JWT</li>
+</ul>
+
+<h3 id="캐싱">캐싱</h3>
+
+<ul>
+  <li>CDN</li>
+  <li>Redis</li>
+  <li>Memcached</li>
+</ul>
+
+<h3 id="웹-보안지식">웹 보안지식</h3>
+
+<ul>
+  <li>MD5와 사용하지 않는 이유</li>
+  <li>SHA Family</li>
+  <li>scrypt</li>
+  <li>bcrypt</li>
+  <li>HTTPS</li>
+  <li>CORS</li>
+  <li>컨텐츠 보안 정책</li>
+  <li>SSL/TLS</li>
+  <li>OWASP 보안 정책</li>
+</ul>
+
+<h3 id="cicd">CI/CD</h3>
+
+<ul>
+  <li>CircleCI</li>
+  <li>Jenkins</li>
+</ul>
+
+<h3 id="개발과-설계-원칙">개발과 설계 원칙</h3>
+
+<ul>
+  <li>GoF 디자인 패턴</li>
+  <li>도메인 주도 설계</li>
+  <li>테스트 주도 개발</li>
+  <li>SOLID</li>
+  <li>KISS</li>
+  <li>YAGNI</li>
+  <li>DRY</li>
+</ul>
+
+<h3 id="아키텍처-패턴">아키텍처 패턴</h3>
+
+<ul>
+  <li>Monolithic</li>
+  <li>Microservice</li>
+  <li>SOA</li>
+  <li>CQRS와 이벤트 소싱</li>
+  <li>Serverless</li>
+</ul>
+
+<h3 id="검색-엔진">검색 엔진</h3>
+
+<ul>
+  <li>ElasticSearch</li>
+  <li>Solr</li>
+</ul>
+
+<h3 id="메시지-브로커">메시지 브로커</h3>
+
+<ul>
+  <li>RabbitMQ</li>
+  <li>Kafka</li>
+</ul>
+
+<h3 id="컨테이너">컨테이너</h3>
+
+<ul>
+  <li>Docker</li>
+  <li>Kubernetes</li>
+</ul>
+
+<h3 id="서비스-메쉬">서비스 메쉬</h3>
+
+<ul>
+  <li>Istio</li>
+</ul>
+
+<h3 id="graphql">GraphQL</h3>
+
+<ul>
+  <li>Apollo</li>
+  <li>Relay Modern</li>
+</ul>
+
+<h3 id="그래프-데이터베이스">그래프 데이터베이스</h3>
+
+<ul>
+  <li>Neo4j</li>
+</ul>
+
+<h3 id="웹-소켓">웹 소켓</h3>
+
+<ul>
+  <li>WebSocket</li>
+  <li>Socket.io</li>
+</ul>
+
+<h3 id="웹-서버">웹 서버</h3>
+
+<ul>
+  <li>Nginx</li>
+  <li>Apache</li>
+  <li>Caddy</li>
+  <li>MS IIS</li>
+</ul>
+
+<h3 id="확장성">확장성</h3>
+
+<ul>
+  <li>마이그레이션 전략
+    <ul>
+      <li>Graceful</li>
+      <li>Degradation</li>
+      <li>Throttling</li>
+      <li>Backpressure</li>
+      <li>Loadshifting</li>
+      <li>Circuit Breaker</li>
+    </ul>
+  </li>
+  <li>차이점을 이해
+    <ul>
+      <li>측정</li>
+      <li>모니터링</li>
+      <li>원격측정</li>
+    </ul>
+  </li>
+  <li>수평적 확장 vs 수직적 확장</li>
+  <li>관찰 가능성을 고려한 확장</li>
+</ul>
+
+<h3 id="etc">ETC</h3>
+
+<ul>
+  <li>Slack</li>
+  <li>업무 잘 하는 방법</li>
+  <li>습관의 중요성</li>
+</ul>
+
+<hr />
+
+<h2 id="project">Project</h2>
+
+<h3 id="이메일-서비스">이메일 서비스</h3>
+
+<h3 id="영상-스트리밍-서비스">영상 스트리밍 서비스</h3>
+
+<h3 id="채팅-서비스">채팅 서비스</h3>
+
+<h3 id="보드-게임-서비스">보드 게임 서비스</h3>
+
+<h3 id="로드맵-설계-서비스">로드맵 설계 서비스</h3>
+
+<h2 id="하고-싶은-것">하고 싶은 것</h2>
+
+<ul>
+  <li>해외 여행 가기</li>
+  <li>친구 사귀기</li>
+  <li>몸무게 10kg 감량</li>
+</ul>
+
+<h2 id="갖고-싶은-것">갖고 싶은 것</h2>
+
+<ul>
+  <li>ARM 기반 맥북</li>
+  <li>아이패드 프로 신형</li>
+</ul>
+:ET

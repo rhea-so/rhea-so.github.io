@@ -1,0 +1,255 @@
+[
+  
+    {
+      "title"    : "현재 내 삶",
+      "title-lower"    : "현재 내 삶",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "일상",
+      "tags"     : "",
+      "url"      : "/archivers/my-life",
+      "date"     : "2021-02-21 15:45:39 +0900",
+      "content"     : "사외 워크샵 점심시간에 잠깐 포스트만 올려봅니다. test"
+    } ,
+  
+    {
+      "title"    : "고시원 탈출 프로젝트",
+      "title-lower"    : "고시원 탈출 프로젝트",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "일상",
+      "tags"     : "",
+      "url"      : "/archivers/plan-of-moving-house",
+      "date"     : "2021-02-21 15:45:39 +0900",
+      "content"     : "사연서울에서 살기 시작한지 어느덧 479일 째 되는 날입니다. (글쓴 날)이렇게 시간이 지나가고, 국방부의 시계가 흐르는 와중에도, 제 삶에는 아무런 변화가 없었습니다.저는 아직도 서울 입성할때 들어간 고시원에서 아직도 살고 있습니다 T_T왜 아직도 고시원을 탈출 못했냐 하면..고시원에 살면 돈을 빨리 모을 수 있을거라 생각했고, 돈을 모아 더 좋은 ..."
+    } ,
+  
+    {
+      "title"    : "Typescript + Mocha + NYC로 TDD하기",
+      "title-lower"    : "typescript + mocha + nyc로 tdd하기",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "개발-방법",
+      "tags"     : "",
+      "url"      : "/archivers/mocha-nyc-typescript",
+      "date"     : "2021-01-03 20:45:45 +0900",
+      "content"     : "요약TDD = 테스트를 염두에 둔 프로그램 개발 방법단위 테스트 = Mocha (Node Module)테스트 커버리지 = NYC (Node Module)TDD가 뭐고, Mocha와 NYC를 이용해 어떻게 Typescript 코드를 TDD 할 수 있는지를 알아보도록 하겠습니다.깊게 들어가기TDD란?테스트 주도 개발(Test-driven developme..."
+    } ,
+  
+    {
+      "title"    : "Javascript",
+      "title-lower"    : "javascript",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "기본적인-프론트엔드-지식",
+      "tags"     : "",
+      "url"      : "/archivers/what-is-javascript",
+      "date"     : "2021-01-03 14:53:45 +0900",
+      "content"     : "요약  웹 브라우저 콘솔에서 Javascript를 사용하는 모습자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어입니다.이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있습니다.또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있습니다..."
+    } ,
+  
+    {
+      "title"    : "CSS",
+      "title-lower"    : "css",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "기본적인-프론트엔드-지식",
+      "tags"     : "",
+      "url"      : "/archivers/what-is-css",
+      "date"     : "2021-01-03 14:53:00 +0900",
+      "content"     : "요약종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있습니다.W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높습니다.마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당합니다면..."
+    } ,
+  
+    {
+      "title"    : "HTML",
+      "title-lower"    : "html",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "기본적인-프론트엔드-지식",
+      "tags"     : "",
+      "url"      : "/archivers/what-is-html",
+      "date"     : "2021-01-03 12:58:00 +0900",
+      "content"     : "요약  1994년도 웹 브라우징 모습하이퍼텍스트 마크업 언어(HyperText Markup Language)는 웹 페이지를 위한 지배적인 마크업 언어입니다.HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공합니다.그리고 이미지와 객체를 내장..."
+    } ,
+  
+    {
+      "title"    : "OSI 모형",
+      "title-lower"    : "osi 모형",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "인터넷",
+      "tags"     : "",
+      "url"      : "/archivers/what-is-osi-model",
+      "date"     : "2021-01-02 00:35:00 +0900",
+      "content"     : "요약OSI 모형(Open Systems Interconnection Reference Model)은 국제표준화기구(ISO)에서 개발한 모델로, 컴퓨터 네트워크 프로토콜 디자인과 통신을 계층으로 나누어 설명한 것입니다.일반적으로 OSI 7 계층이라고 합니다.깊게 들어가기역사1970년대 말에, 한 프로젝트가 국제 표준화 기구(ISO)에 의해 관리되고 있었..."
+    } ,
+  
+    {
+      "title"    : "웹의 동작 방식",
+      "title-lower"    : "웹의 동작 방식",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "인터넷",
+      "tags"     : "",
+      "url"      : "/archivers/how-web-works",
+      "date"     : "2021-01-02 00:23:00 +0900",
+      "content"     : "요약여러분의 컴퓨터나 폰의 웹 브라우저 안에서 웹페이지를 볼 때 무슨 일이 발생하는지에 대한 간소화된 개념을 제공할 것입니다.이 이론은 단기적으로 봤을 때 웹 코드를 작성하기 위해 필수적인 것은 아니지만, 머지 않아 백그라운드에서 발생하는 것을 이해하는 것으로부터 오는 장점을 얻게 될 것입니다.깊게 들어가기클라이언트와 서버웹에 연결된 컴퓨터는 클라이언..."
+    } ,
+  
+    {
+      "title"    : "호스팅은 무엇일까요?",
+      "title-lower"    : "호스팅은 무엇일까요?",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "인터넷",
+      "tags"     : "",
+      "url"      : "/archivers/what-is-hosting",
+      "date"     : "2021-01-02 00:10:00 +0900",
+      "content"     : "요약호스팅이란 정보의 집약체인 서버의 전체 혹은 일부를 이용할 수 있도록 임대해 주는 서비스를 말합니다.서버를 관리하기 위해서는 24시간 내내 안정적으로 전기를 공급해야 하고, 빠르고 안정적인 인터넷 회선을 사용해야 하며, 철저한 보안 시스템을 갖추고 있어야 합니다.따라서 개인이 서버를 관리하기 보단 전문 업체의 호스팅 서비스를 사용하는 것이 일반적입..."
+    } ,
+  
+    {
+      "title"    : "도메인 네임은 무엇일까요?",
+      "title-lower"    : "도메인 네임은 무엇일까요?",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "인터넷",
+      "tags"     : "",
+      "url"      : "/archivers/what-is-domain-name",
+      "date"     : "2021-01-02 00:03:00 +0900",
+      "content"     : "요약도메인 네임(Domain name)은 넓은 의미로는 네트워크상에서 컴퓨터를 식별하는 호스트명을 가리키며, 좁은 의미에서는 도메인 레지스트리에게서 등록된 이름을 의미합니다.이를 통틀어서 ‘웹 주소’라고 (잘못) 부르는 경우도 있습니다. 여기서는 후자를 서술합니다.등록된 도메인 네임은 보통 호스트명의 일부분으로, DNS 상에서 해당 호스트명 및 그 하..."
+    } ,
+  
+    {
+      "title"    : "DNS와 작동 원리",
+      "title-lower"    : "dns와 작동 원리",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "인터넷",
+      "tags"     : "",
+      "url"      : "/archivers/how-dns-works",
+      "date"     : "2021-01-01 23:44:00 +0900",
+      "content"     : "요약도메인 네임 시스템(Domain Name System, DNS)은 호스트의 도메인 이름을 호스트의 네트워크 주소로 바꾸거나 그 반대의 변환을 수행할 수 있도록 하기 위해 개발되었습니다.특정 컴퓨터(또는 네트워크로 연결된 임의의 장치)의 주소를 찾기 위해, 사람이 이해하기 쉬운 도메인 이름을 숫자로 된 식별 번호(IP 주소)로 변환해 줍니다.도메인 ..."
+    } ,
+  
+    {
+      "title"    : "브라우저와 동작 원리",
+      "title-lower"    : "브라우저와 동작 원리",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "인터넷",
+      "tags"     : "",
+      "url"      : "/archivers/how-browser-works",
+      "date"     : "2021-01-01 23:11:00 +0900",
+      "content"     : "요약브라우저의 주요 기능은 사용자가 원하는 웹페이지를 서버에 요청(Request)하고 서버의 응답(Reponse)을 받아 브라우저에 표시하는 것입니다.브라우저는 HTML, CSS 명세에 따라 HTML파일을 해석해서 보여줍니다.이 명세는 웹 표준화 기구인 W3C(World Wide Web Consortium)에서 정합니다.깊게 들어가기브라우저의 기본 구..."
+    } ,
+  
+    {
+      "title"    : "HTTP는 무엇일까요?",
+      "title-lower"    : "http는 무엇일까요?",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "인터넷",
+      "tags"     : "",
+      "url"      : "/archivers/what-is-http",
+      "date"     : "2021-01-01 22:37:00 +0900",
+      "content"     : "요약HTTP(HyperText Transfer Protocol)는 W3(World Wide Web) 상에서 정보를 주고받을 수 있는 프로토콜입니다.주로 HTML 문서를 주고받는 데에 쓰입니다.주로 TCP를 사용하고 HTTP/3 부터는 UDP를 사용하며, 80번 포트를 사용합니다.1996년에 버전 1.0, 그리고 1999년에 1.1이 각각 발표되었습니다..."
+    } ,
+  
+    {
+      "title"    : "인터넷은 어떻게 동작할까요?",
+      "title-lower"    : "인터넷은 어떻게 동작할까요?",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "인터넷",
+      "tags"     : "",
+      "url"      : "/archivers/how-internet-works",
+      "date"     : "2021-01-01 22:10:00 +0900",
+      "content"     : "요약인터넷은 웹의 핵심적인 기술입니다. 인터넷의 가장 기본적인 것은, 컴퓨터들이 서로 통신 가능한 거대한 네트워크라는 것입니다.인터넷의 역사는 잘 알려지지 않았습니다.인터넷은 1960년 대 미육군에서 기금한 연구 프로젝트에서 시작되었습니다. 그리고 1980년 대에 많은 국립 대학과 비공개 기업의 지원으로 공공의 기반으로 변화되었습니다.인터넷을 지원하는..."
+    } ,
+  
+    {
+      "title"    : "프로젝트의 목표 설정",
+      "title-lower"    : "프로젝트의 목표 설정",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "번역",
+      "tags"     : "",
+      "url"      : "/archivers/article-on-setting-project-goals",
+      "date"     : "2021-01-01 13:38:00 +0900",
+      "content"     : "이 포스트는 Mozilla의 프로젝트 목표 설정의 번역본입니다“프로젝트의 목표 설정”를 어떻게 하면 좋을까요?  전제 조건: 없음목표: 웹 프로젝트에 방향을 제시하는 목표를 정의하는 방법을 배웁니다.개요웹 프로젝트를 시작할 때, 많은 사람들은 기술 노하우에만 집착합니다.물론 기술 노하우을 잘 알고 있어야 하지만,사실 정말로 중요한 것은 “프로젝트를 통..."
+    } ,
+  
+    {
+      "title"    : "2021년 계획",
+      "title-lower"    : "2021년 계획",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "일상",
+      "tags"     : "",
+      "url"      : "/archivers/2021-planning",
+      "date"     : "2021-01-01 01:00:00 +0900",
+      "content"     : "2021년에는 뭘 하면서 살면 좋을지에 대해서 정리해보았습니다Roadmap  https://github.com/kamranahmedse/developer-roadmap인터넷  인터넷은 어떻게 동작할까요?  HTTP는 무엇일까요?  브라우저와 동작 원리  DNS와 작동 원리  도메인 네임은 무엇일까요?  호스팅은 무엇일까요?  웹의 동작 방식  OSI ..."
+    } ,
+  
+    {
+      "title"    : "Oculus Quest2 구매기",
+      "title-lower"    : "oculus quest2 구매기",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "일상",
+      "tags"     : "",
+      "url"      : "/archivers/oculus-quest2",
+      "date"     : "2020-12-30 01:00:00 +0900",
+      "content"     : "스펙타클하게 Oculus Quest2를 충동 구매한 이야기를 다룹니다자기 소개저는 어려서부터 가상 현실을 좋아했습니다.VR이라는 개념이 일반 대중에게 알려지지도 않은 옛날, 외국 사이트를 뒤져가며 자료들을 찾아보며 구현을 시도할 정도로 열정 하나만큼은 누구보다 대단했습니다.  어렸을때, 찾아봤던 개발 영상 - https://www.youtube.com..."
+    } ,
+  
+    {
+      "title"    : "메시지 큐 알아보기",
+      "title-lower"    : "메시지 큐 알아보기",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "메시지-브로커",
+      "tags"     : "",
+      "url"      : "/archivers/message-queue",
+      "date"     : "2020-12-17 01:00:00 +0900",
+      "content"     : "메시지 큐(Message Queue 이하 MQ)란?프로세스(프로그램) 간에 데이터를 교환할 때 사용하는 통신 방법 중에 하나로,더 큰 개념으로는 MOM(Message Oriented Middleware : 메시지 지향 미들웨어 이하 MOM)를 의미합니다.MOM이란 비동기 메시지를 사용하는 프로그램 간의 데이터 송수신을 의미하는데 MOM을 구현한 시스템..."
+    } ,
+  
+    {
+      "title"    : "페차쿠차 스타일로 요점만 발표하기",
+      "title-lower"    : "페차쿠차 스타일로 요점만 발표하기",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "발표",
+      "tags"     : "",
+      "url"      : "/archivers/pecha-kucha",
+      "date"     : "2020-12-15 15:55:00 +0900",
+      "content"     : "페차쿠차는 일본어로 ‘재잘재잘(잡담)’이라는 뜻이다.위키피디아에 의하면 일본에 살던 두 외국인(Astrid Klein, Mark Dytham)이 고안한 발표 형식으로, 2003년에 시작되었다고 한다.페차쿠차에는 규칙이 있는데, 이는 다음과 같다.  총 20개의 슬라이드  각 슬라이드 발표는 20초(20초가 지나면 다음 슬라이드로 넘어갈 것)총 400초..."
+    } ,
+  
+    {
+      "title"    : "나만의 NPM 저장소 만들기",
+      "title-lower"    : "나만의 npm 저장소 만들기",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "저장소",
+      "tags"     : "",
+      "url"      : "/archivers/verdaccio",
+      "date"     : "2020-12-13 15:55:00 +0900",
+      "content"     : "리뉴얼 필요  Verdaccio를 이용해 Private한 NPM 저장소를 만드는 방법을 소개합니다대상 독자  만든 NodeJS 모듈을 사내에서만 배포를 하고 싶은 경우  모듈을 외부에 공개안하고 싶은데 npmjs.com Private을 쓰자니, 요금이 부담되는 경우 (한달에 7$씩)  내 모듈이 인터넷에 올라가는게 영 찝찝하고 마음에 안드는 경우  참..."
+    } ,
+  
+    {
+      "title"    : "Git쓰며 개발하기",
+      "title-lower"    : "git쓰며 개발하기",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "버전-관리",
+      "tags"     : "",
+      "url"      : "/archivers/git",
+      "date"     : "2020-11-28 21:00:00 +0900",
+      "content"     : "열심히 밤을 지새워가며 만든 발표 자료 교수님_엉덩이는_빨개.ppt가 있습니다.발표를 하기 전에 친구들에게 자료를 잘 만들었는지 평가를 부탁했고,평가해보니 부족한 부분이 많아 자료를 업데이트하게 되었습니다.기존 자료와 수정한 자료를 비교하고 싶어 파일을 교수님_엉덩이는_빨개.ppt와 교수님_엉덩이는_빨개_최종본.ppt로 각각 저장했습니다.(만약, 수정..."
+    } 
+  
+]

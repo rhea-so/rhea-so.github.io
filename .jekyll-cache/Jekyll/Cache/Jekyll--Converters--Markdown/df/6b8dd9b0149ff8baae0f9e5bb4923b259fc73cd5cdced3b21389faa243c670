@@ -1,0 +1,353 @@
+I",U<h2 id="요약">요약</h2>
+
+<p><img src="/assets/2021-01-03-what-is-javascript/javascript.png" alt="javascript" /></p>
+
+<blockquote>
+  <p>웹 브라우저 콘솔에서 Javascript를 사용하는 모습</p>
+</blockquote>
+
+<p>자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어입니다.<br />
+이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있습니다.</p>
+
+<p>또한 <strong>Node.js</strong>와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있습니다.<br />
+자바스크립트는 본래 넷스케이프 커뮤니케이션즈 코퍼레이션의 브렌던 아이크(Brendan Eich)가 처음에는 모카(Mocha)라는 이름으로,<br />
+나중에는 라이브스크립트(LiveScript)라는 이름으로 개발하였으며, 최종적으로 자바스크립트가 되었습니다.</p>
+
+<p>자바스크립트가 썬 마이크로시스템즈의 자바와 구문이 유사한 점도 있지만, 이는 사실 두 언어 모두 C 언어의 기본 구문에 바탕을 뒀기 때문이고, <strong>자바와 자바스크립트는 직접적인 관련성이 없습니다.</strong><br />
+이름과 구문 외에는 자바보다 셀프나 스킴과 유사성이 많습니다.</p>
+
+<p>ECMA스크립트는 쉽게 말해 자바스크립트의 표준화된 버전입니다.<br />
+모질라 1.8 베타 1이 나오면서 XML에 대응하는 확장 언어인 E4X(ECMA-357)를 부분 지원하게 되었습니다.</p>
+
+<p>자바스크립트는 브라우저마다 지원되는 버전이 다릅니다.</p>
+
+<h2 id="깊게-들어가기">깊게 들어가기</h2>
+
+<h3 id="역사">역사</h3>
+
+<p><strong>넷스케이프에서의 시작</strong></p>
+
+<p><img src="/assets/2021-01-03-what-is-javascript/netscape.jpg" alt="netscape" /></p>
+
+<p>1993년, 일리노이 대학교 어배너-섐페인의 NCSA는 최초의 대중적인 그래픽 웹 브라우저인 NCSA 모자이크를 출시하였습니다.</p>
+
+<p>1994년, 모자이크 커뮤니케이션스라는 이름의 회사가 캘래포니아주 마운틴 뷰에 설립되었으며 모자이크 넷스케이프를 만들기 위해 오리지널 NCSA 모자이크 개발자들을 고용하였습니다.</p>
+
+<p>그러나 NCSA 모자이크와 코드는 의도적으로 공유하지 않았습니다.<br />
+이 기업의 브라우저의 내부 코드명은 모질라였으며 이는 “Mosaic and Godzilla”에서 비롯된 용어입니다.</p>
+
+<p>이 웹 브라우저의 첫 버전인 모자이크 넷스케이프 0.9는 1994년 말에 출시되었습니다.<br />
+4개월 후 브라우저 시장의 3/4를 잠식하면서 1990년대에 주된 웹 브라우저가 되었습니다.<br />
+NCSA의 상표 소유권 문제를 회피하고자 이 브라우저는 같은 해에 “넷스케이프 내비게이터”로 이름을 바꾸었으며 이 기업은 “넷스케이프 커뮤니케이션스”라는 이름을 취하였습니다.</p>
+
+<p>넷스케이프 커뮤니케이션스는 웹이 더 동적으로 변화할 필요가 있었음을 실감했습니다.<br />
+기업의 설립자 Marc Andreessen은 HTML에 코드를 웹 페이지 마크업으로 직접 작성하면서 웹 디자이너들과 파트타입 프로그래머들이 이미지, 플러그인 등의 요소를 쉽게 조합할 수 있는 글루 언어(glue language)가 필요했습니다고 믿었습니다.</p>
+
+<p>1995년, 넷스케이프 커뮤니케이션스는 스킴 프로그래밍 언어를 넷스케이프 내비게이터에 임베디드하기 위해 브렌던 아이크를 영입하였습니다.<br />
+시작 전에 넷스케이프 커뮤니케이션스는 넷스케이프 내비게이터 썬의 더 정적인 프로그래밍 언어인 자바를 포함시키기 위해 썬 마이크로시스템즈와 협업했으며 이는 사용자에게 웹 기술 및 플랫폼을 채택시키려는 마이크로소프트와 경쟁하기 위해서였습니다.</p>
+
+<p>넷스케이프 커뮤니케이션스는 이때 자신들이 만들기 바랐던 스크립트 언어가 자바를 구현할 것이고 비슷한 문법을 채용하는 것이 좋겠다고 생각했으며 펄, 파이썬, Tcl, 스킴 등 기타 언어를 채택하는 것을 배제하였습니다.<br />
+경쟁적인 제안에 대항하여 자바스크립트 개념을 방어하기 위해 이 기업은 프로토타입이 필요했습니다.<br />
+아이크는 1995년 5월 10일 안에 이를 작성했습니다.</p>
+
+<p>원래 모카(Mocha)라는 이름으로 개발되었으나 이 언어는 공식적으로 라이브스크립트(LiveScript)로 불렸으며 이 당시 1995년 9월 넷스케이프 내비게이터 2.0의 베타 릴리스가 이루어졌으나 나중에 이름이 자바스크립트로 바뀌었는데 이는 12월 넷스케이프 내비게이터 2.0 베타 3에 채용되었습니다.</p>
+
+<p>이름의 최종 선정에 혼란이 야기되었는데 이 언어가 자바 프로그래밍 언어에서 파생되었습니다는 인상을 심었으며 이러한 선택이 마케팅적인 특징을 보였고 이는 넷스케이프가 당시 인기있는 웹 프로그래밍 언어로서 자바스크립트를 내밀기 위한 것이었습니다.</p>
+
+<h3 id="자바와-자바스크립트-그리고-j스크립트">자바와 자바스크립트, 그리고 J스크립트</h3>
+
+<p>라이브스크립트의 이름이 자바스크립트로 변경된 것은 대략 넷스케이프가 자사의 넷스케이프 내비게이터 웹 브라우저에 자바 기술에 대한 지원을 포함하기 시작할 즈음입니다.</p>
+
+<p>자바스크립트는 1995년 12월 출시된 넷스케이프 2.0B3에서부터 공개, 채택되었습니다.<br />
+자바스크립트라는 이름은 상당한 혼란을 가져왔습니다.</p>
+
+<p>이것은 자바와 자바스크립트 간에는 구문이 유사하다는 점(양쪽 모두 C에 바탕을 두었기 때문에) 외에는 실제 관련성이 없었기 때문입니다.<br />
+두 언어는 의미론적으로 매우 다르고, 특히 각각의 객체 모델은 관련성이 없는 데다가 상당 부분이 호환되지 않습니다.</p>
+
+<p>웹 페이지 향상 언어로서 자바스크립트의 성공에 자극받은 마이크로소프트는 J스크립트로 알려진 호환 언어를 개발하게 되었습니다.<br />
+J스크립트는 1996년 8월에 출시된 인터넷 익스플로러 브라우저 3.0부터 지원 되기 시작했습니다.<br />
+IE 브라우저에서의 자바스크립트 사용은 실제로는 J스크립트의 사용을 의미하는 것이었습니다.</p>
+
+<p>이에 대한 표준화 요구는 ECMA스크립트에 대한 ECMA-262 표준의 기반이 되었으며, 1996년 11월 이후 세 번째 판까지 출판되었습니다.<br />
+자바스크립트와 함께 자주 쓰이는 용어인 DOM은 사실 ECMA스크립트 표준의 일부가 아니며, 그것은 자체로 하나의 표준이고 XML에 기반을 둡니다.</p>
+
+<h3 id="상표">상표</h3>
+
+<p>“자바스크립트”(JavaScript)는 오라클의 상표입니다.<br />
+넷스케이프 커뮤니케이션스가 발명, 구현한 기술 및 모질라 재단과 같은 독립 기관의 라이선스 하에 사용됩니다.</p>
+
+<h3 id="헬로-월드-프로그램">헬로 월드 프로그램</h3>
+
+<p>아래는 자바스크립트와 HTML5로 이루어진 헬로 월드 프로그램이며, 실선 내부가 자바스크립트로 처리된 부분을 설명합니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+      <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"Content-Type"</span> <span class="na">content=</span><span class="s">"text/html"</span> <span class="na">charset=</span><span class="s">"UTF-8"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;title&gt;</span>자바스크립트 페이지<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="dl">"</span><span class="s2">&lt;p&gt;Hello World!&lt;/p&gt;</span><span class="dl">"</span><span class="p">);</span>
+      <span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+
+    <span class="nt">&lt;body&gt;</span>
+      <span class="nt">&lt;noscript&gt;</span>
+        <span class="nt">&lt;p&gt;</span>브라우저가 자바스크립트 기능을 지원하지 않거나 자바스크립트 기능이 꺼져 있습니다.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/noscript&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h3 id="문법">문법</h3>
+
+<p><strong>단순 문법</strong></p>
+
+<p>자바스크립트의 변수는 <code class="language-plaintext highlighter-rouge">var</code>, <code class="language-plaintext highlighter-rouge">let</code>, <code class="language-plaintext highlighter-rouge">const</code> 키워드를 사용하여 정의할 수 있습니다.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Declares a function-scoped variable named `x`, and implicitly assigns the</span>
+<span class="c1">// special value `undefined` to it.</span>
+<span class="kd">var</span> <span class="nx">x</span><span class="p">;</span>
+
+<span class="c1">// More explicit version of the above.</span>
+<span class="kd">var</span> <span class="nx">x2</span> <span class="o">=</span> <span class="kc">undefined</span><span class="p">;</span>
+
+<span class="c1">// Declares a block-scoped variable named `y`, and implicitly sets it to</span>
+<span class="c1">// `undefined`. The `let` keyword was introduced in ECMAScript 2015.</span>
+<span class="kd">let</span> <span class="nx">y</span><span class="p">;</span>
+
+<span class="c1">// More explicit version of the above.</span>
+<span class="kd">let</span> <span class="nx">y2</span> <span class="o">=</span> <span class="kc">undefined</span><span class="p">;</span>
+
+<span class="c1">// Declares a block-scoped, un-reassign-able variable named `z`, and sets it to</span>
+<span class="c1">// `undefined`. The `const` keyword was also introduced in ECMAScript 2015, and</span>
+<span class="c1">// must be explicitly assigned to.</span>
+<span class="kd">const</span> <span class="nx">z</span> <span class="o">=</span> <span class="kc">undefined</span><span class="p">;</span>
+
+<span class="c1">// Declares a variable named `myNumber`, and assigns a number literal (the value</span>
+<span class="c1">// `2`) to it.</span>
+<span class="kd">let</span> <span class="nx">myNumber</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+
+<span class="c1">// Reassigns `myNumber`, setting it to a string literal (the value `"foo"`).</span>
+<span class="c1">// JavaScript is a dynamically-typed language, so this is legal.</span>
+<span class="nx">myNumber</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">foo</span><span class="dl">"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>HTML과 자바스크립트</strong></p>
+
+<p>HTML은 &lt; &gt; 태그로 엘리먼트(element)를 정의합니다면, 이러한 HTML의 <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> Hello, World! <code class="language-plaintext highlighter-rouge">&lt;/body&gt;</code> 엘리먼트에 일대일 대응하는 자바스크립트(ECMA스크립트)는</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Hello, World!</span><span class="dl">"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>처럼 정의됩니다.<br />
+여기서처럼 HTML과 자바스크립트 간에는 광범위한 호환성을 보장하는 동전의 양면성 같은 구조를 엿볼 수 있는데, 이것이 가능한 것은 DOM 때문이라고 말할 수 있습니다.</p>
+
+<p>한편 자바스크립트는 HTML과의 연동관계에서 HTML의 로딩시점 또는 초기화와 관련된 즉시 실행 함수(Immediately invoked function expression)를 제공합니다.</p>
+
+<h3 id="버전-역사">버전 역사</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">버전</th>
+      <th style="text-align: center">출시일</th>
+      <th style="text-align: center">내용</th>
+      <th style="text-align: center">넷스케이프</th>
+      <th style="text-align: center">내비게이터</th>
+      <th style="text-align: center">모질라</th>
+      <th style="text-align: center">파이어폭스</th>
+      <th style="text-align: center">인터넷</th>
+      <th style="text-align: center">익스플로러</th>
+      <th style="text-align: center">오페라</th>
+      <th style="text-align: center">사파리</th>
+      <th style="text-align: center">크롬</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1.0</td>
+      <td style="text-align: center">1996년 3월</td>
+      <td style="text-align: center">2.0</td>
+      <td style="text-align: center">3.0</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.1</td>
+      <td style="text-align: center">1996년 8월</td>
+      <td style="text-align: center">3.0</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.2</td>
+      <td style="text-align: center">1997년 6월</td>
+      <td style="text-align: center">4.0-4.05</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.3</td>
+      <td style="text-align: center">1998년 10월</td>
+      <td style="text-align: center">ECMA-262 1st + 2nd edition</td>
+      <td style="text-align: center">4.06-4.7x</td>
+      <td style="text-align: center">4.0</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.4</td>
+      <td style="text-align: center">넷스케이프</td>
+      <td style="text-align: center">서버</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.5</td>
+      <td style="text-align: center">2000년 11월</td>
+      <td style="text-align: center">ECMA-262 3rd edition</td>
+      <td style="text-align: center">6.0</td>
+      <td style="text-align: center">1.0</td>
+      <td style="text-align: center">5.5</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">7.0</td>
+      <td style="text-align: center">3.0-5</td>
+      <td style="text-align: center">1.0-10.0.666</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.6</td>
+      <td style="text-align: center">2005년 11월</td>
+      <td style="text-align: center">1.5 + array extras + array and string generics + E4X</td>
+      <td style="text-align: center">1.5</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.7</td>
+      <td style="text-align: center">2006년 10월</td>
+      <td style="text-align: center">1.6 + Pythonic generators + iterators + let</td>
+      <td style="text-align: center">2.0</td>
+      <td style="text-align: center">28.0.1500.95</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.8</td>
+      <td style="text-align: center">2008년 6월</td>
+      <td style="text-align: center">1.7 + generator expressions + expression closures</td>
+      <td style="text-align: center">3.0</td>
+      <td style="text-align: center">11.50</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.8.1</td>
+      <td style="text-align: center">1.8 + native JSON support + minor updates</td>
+      <td style="text-align: center">3.5</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.8.2</td>
+      <td style="text-align: center">2009년 6월 22일</td>
+      <td style="text-align: center">1.8.1 + minor updates</td>
+      <td style="text-align: center">3.6</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1.8.5</td>
+      <td style="text-align: center">2010년 7월 27일</td>
+      <td style="text-align: center">1.8.2 + new features for ECMA-262 5th edition compliance</td>
+      <td style="text-align: center">4.0</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center">-</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="프로그래밍-언어">프로그래밍 언어</h3>
+
+<p>한편 자바스크립트에서 사용되는 기초적인 문법의 개념으로는 속성과 메소드를 갖는 객체(오브젝트) 개념이 있으며, 변수 선언, 함수 정의, 연산자 그리고 제어문등을 이 프로그래밍 언어의 주요 개념으로 언급할수 있을 뿐만 아니라 이 언어가 속한 객체 지향 프로그래밍언어(OOP)의 공통적인 주요 개념이기도 합니다.</p>
+
+<h2 id="참고">참고</h2>
+
+<ul>
+  <li><a href="https://ko.wikipedia.org/wiki/자바스크립트">wikipedia - Javascript</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/ECMA스크립트">ECMA스크립트</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/DHTML">DHTML</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/자바스크립트_엔진">자바스크립트 엔진</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/Ajax">Ajax</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/JQuery">jQuery</a></li>
+  <li><a href="https://ko.wikipedia.org/wiki/프로토타입_자바스크립트_프레임워크">프로토타입 자바스크립트 프레임워크</a></li>
+</ul>
+:ET
