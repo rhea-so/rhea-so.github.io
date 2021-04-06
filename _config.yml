@@ -3,14 +3,14 @@ theme: plainwhite
 
 plainwhite:
   dark_mode: true
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: JeongHyeon Kim
+  tagline: SoftwareEngineer
   date_format: "%b %-d, %Y"
 
   social_links:
-    twitter: samarsault
-    github: samarsault
-    linkedIn: in/samarsault # format: locale/username
+    twitter: rhea-soft
+    github: rhea-so
+    # linkedIn: in/samarsault # format: locale/username
 
 # Site settings
 title: 2021 Dev
@@ -20,27 +20,8 @@ timezone: Asia/Seoul
 description: >-
   Junior Software Engineer Blog
 
-# Your information
-email: jeonghyeon.rhea@gmail.com
-author: JeongHyeon Kim
-avatar: "//avatars3.githubusercontent.com/u/25793226?s=460&u=af5553a464bd29c3690143057a8314b1e27857d6&v=4"
-profile: 훌륭한 서비스를 개발하기 위해 열심히 공부 중
-twitter_username: dev_rhea
-github_username:  rhea-so
-profile_links:
-  Email: "mailto:jeonghyeon.rhea@gmail.com"
-  GitHub: "https://github.com/rhea-so"
-
 excerpt_separator: <!--more-->
 
-header:
-  links:
-    Articles: /
-    Goal: /archivers/2021-planning
-    About: /about/
-    Category: /category/
-
-permalink: /archivers/:title
 plugins:
  - jekyll-paginate
  - jekyll-gist
