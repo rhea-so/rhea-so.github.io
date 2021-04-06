@@ -7,14 +7,8 @@ git remote set-url --push origin https://rhea-so:$AccessToken@github.com/rhea-so
 
 git add -fA
 git commit --allow-empty -m "$(git log post -1 --pretty=%B)"
-git push -f origin post
 
-git checkout main
-git pull
+git push origin main --force
 
-git checkout post
-git merge --strategy=ours master 
-git checkout master
-git merge --no-ff feature
 
 echo "deployed successfully"
