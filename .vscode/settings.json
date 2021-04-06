@@ -15,7 +15,7 @@
         "deploy*": true,
         ".vscode": true,
         ".jekyll-cache": true,
-        "_includes": true,
+        // "_includes": true,
         ".circleci": true,
         "robots.txt": true
     },
