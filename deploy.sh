@@ -11,6 +11,8 @@ git push -f origin post
 
 git checkout main
 git pull
+
+git checkout post
 git merge --strategy=ours master 
 git checkout master
 git merge --no-ff feature
