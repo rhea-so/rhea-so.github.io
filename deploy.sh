@@ -8,7 +8,7 @@ rm -rf vendor
 git add -fA
 git commit --allow-empty -m "$(git log post -1 --pretty=%B)"
 
-git branch -b build post
+git checkout -b build post
 git checkout main
 git pull
 git checkout build
