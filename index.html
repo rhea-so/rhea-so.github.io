@@ -1,40 +1,82 @@
 ---
-layout: default
 ---
 
-<div class="home">
-  <a class="rss-link" href="{{ " /feed.xml" | prepend: site.baseurl }}">RSS Feed</a>
-  <h1 class="page-heading">Articles</h1>
+<!DOCTYPE html>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+<html lang="ko">
 
-      <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>김정현</title>
+  <meta name="theme-color" content="#3a7bd5" />
+  <meta name="description" content="백엔드 엔지니어, 김정현의 블로그입니다." />
 
-      <div class="post-excerpt">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">Read More &raquo;</a>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+  <meta property="og:url" content="https://rhea-so.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="김정현" />
+  <meta property="og:image" content="./cover.png" />
+  <meta property="og:description" content="백엔드 엔지니어, 김정현의 블로그입니다." />
+  <meta property="og:locale" content="ko_KR" />
 
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">이전</a>
-    {% else %}
-    <span class="previous">이전</span>
-    {% endif %}
-    <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">다음</a>
-    {% else %}
-    <span class="next ">다음</span>
-    {% endif %}
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@rhea-so" />
+  <meta name="twitter:url" content="https://rhea-so.github.io/" />
+  <meta name="twitter:title" content="김정현" />
+  <meta name="twitter:description" content="프론트엔드 엔지니어, 김정현의 이력서입니다." />
+  <meta name="twitter:image" content="./cover.png" />
+
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <h1>
+        반갑습니다,<br />저는 김정현입니다<span class="period-mark">.</span>
+      </h1>
+      <p class="big-paragraph">
+        서울에서 1년차 게임 서버 엔지니어로 일하고 있습니다.
+      </p>
+    </section>
+    <section>
+      <h2>Work Experience<span class="period-mark">.</span></h2>
+      <div class="row">
+        <div class="row-left">
+          <h3>게임스프링<span class="period-mark">.</span></h3>
+          <span class="role">Game Server Developer</span>
+          <span> <time datetime="2019-12">2019. 12</time> - 현재 </span>
+        </div>
+        <div class="row-right">
+          <div class="project">
+            <h4>사내 게임 서버 라이브러리 개발<span class="period-mark">.</span></h4>
+            <span class="time">
+              <time datetime="2019-09">2019. 09</time> - 현재
+            </span>
+            <h5>Description<span class="period-mark">.</span></h5>
+            <p>
+              ABC는 123입니다
+            </p>
+            <h5>What did I do<span class="period-mark">.</span></h5>
+            <ul>
+              <li>1번 내용</li>
+              <li>2번 내용</li>
+              <li>3번 내용</li>
+            </ul>
+            <h5>Tech Stack<span class="period-mark">.</span></h5>
+            <p>TypeScript</p>
+          </div>
+    </section>
+    <section>
+      <h2>Contact<span class="period-mark">.</span></h2>
+      <ul>
+        <li><a href="mailto:mail@jeonghyeon.rhea@gmail.com">이메일</a></li>
+        <li>
+          <a href="/pages" target="_blank">블로그</a>
+        </li>
+      </ul>
+    </section>
   </div>
+</body>
 
-</div>
+</html>

@@ -40,7 +40,7 @@ changefreq: daily
 그래서 방에서 마음껏 전화를 못하게 되었습니다.  
 데시벨이 약 40 ~ 60 정도인데도 말입니다.
 
-![cry](../assets/2021-02-21-plan-of-moving-house/cry.gif)
+![cry](/assets/2021-02-21-plan-of-moving-house/cry.gif)
 
 반대로, 저도 소음으로 인한 스트레스를 겪고 있습니다.
 
@@ -59,7 +59,7 @@ changefreq: daily
 
 ## 난생 처음해보는 집 알아보기
 
-![mansae](../assets/2021-02-21-plan-of-moving-house/mansae.gif)
+![mansae](/assets/2021-02-21-plan-of-moving-house/mansae.gif)
 
 > 이사를 합시다!
 
@@ -89,7 +89,7 @@ changefreq: daily
 
 ### 어른들께 받은 조언들
 
-![advise](../assets/2021-02-21-plan-of-moving-house/advise.gif)
+![advise](/assets/2021-02-21-plan-of-moving-house/advise.gif)
 
 1. 최대한 많은 집을 둘러보며, 눈을 익힐 것
 2. 집 보자마자 괜찮다고 바로 덜컥 계약하지 말 것
@@ -138,7 +138,7 @@ changefreq: daily
 
 ### 첫날
 
-![첫날](../assets/2021-02-21-plan-of-moving-house/첫날.png)
+![첫날](/assets/2021-02-21-plan-of-moving-house/첫날.png)
 
 회사를 걸어갈 수 있는 거리인 반포동부터 먼저 알아보았습니다.
 
@@ -156,7 +156,7 @@ changefreq: daily
 
 너무 충격적이어서 사진은 올리지 않겠습니다.
 
-![반지하](../assets/2021-02-21-plan-of-moving-house/반지하.png)
+![반지하](/assets/2021-02-21-plan-of-moving-house/반지하.png)
 
 실제로 반지하에서 살고 계신 트친분이 알려주신 반지하 장단점..
 
@@ -167,7 +167,7 @@ changefreq: daily
 
 ### 둘째날
 
-![둘째날](../assets/2021-02-21-plan-of-moving-house/둘째날.png)
+![둘째날](/assets/2021-02-21-plan-of-moving-house/둘째날.png)
 
 강남에서 점점 멀어지기 시작했습니다.
 
@@ -175,13 +175,13 @@ changefreq: daily
 
 옥탑도 나오고, 반지하도 나오고, 1층도 나오고 정말 다양했습니다.
 
-![옥탑](../assets/2021-02-21-plan-of-moving-house/옥탑.png)
+![옥탑](/assets/2021-02-21-plan-of-moving-house/옥탑.png)
 
 그 중 가장 충격적이었던 옥탑.
 
 옥탑 방 올라가는게 정말 다이나믹한데다 (삐끗해서 넘어지면 바로 저세상. 추락..)  바로 앞에 사무실이 있고..  
 
-![화장실](../assets/2021-02-21-plan-of-moving-house/화장실.png)
+![화장실](/assets/2021-02-21-plan-of-moving-house/화장실.png)
 
 화장실이 방 밖에 따로 있습니다.. ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
 
@@ -200,7 +200,7 @@ changefreq: daily
 
 1층 ~ 3층 방을 보면 어찌.. 좀 상황이 달라질까요?
 
-![곰팡이](../assets/2021-02-21-plan-of-moving-house/곰팡이.png)
+![곰팡이](/assets/2021-02-21-plan-of-moving-house/곰팡이.png)
 
 아뇨? 이 가격대에서는 여전히 곰팡이가 득실거리고, 오래된 방 밖에 찾아볼 수 없었습니다.
 
@@ -221,13 +221,13 @@ changefreq: daily
 
 ### 셋째날
 
-![셋째날](../assets/2021-02-21-plan-of-moving-house/셋째날.png)
+![셋째날](/assets/2021-02-21-plan-of-moving-house/셋째날.png)
 
 건대까지 올라왔습니다.
 
 건대는 대학가니까, 다른 곳에 비해서 괜찮은 매물들이 많이 있지 않을까요?
 
-![낡았어요](../assets/2021-02-21-plan-of-moving-house/낡았어요.png)
+![낡았어요](/assets/2021-02-21-plan-of-moving-house/낡았어요.png)
 
 드디어 집이 나오긴 했습니다!!  
 근데.. 어.. 근데 너무 낡았어요..
@@ -248,7 +248,7 @@ changefreq: daily
 
 1000/60 매물을 보여달라고 부탁드려서 가봤는데, 방이 완전 180도 달라지더라구요
 
-![와](../assets/2021-02-21-plan-of-moving-house/와.png)
+![와](/assets/2021-02-21-plan-of-moving-house/와.png)
 
 다 새거인거 보세요
 
@@ -279,11 +279,11 @@ changefreq: daily
 
 #### 낡았지만, 넓은 방
 
-![햇빛](../assets/2021-02-21-plan-of-moving-house/햇빛.png)
+![햇빛](/assets/2021-02-21-plan-of-moving-house/햇빛.png)
 	드디어 햇빛이 들어옵니다 와!  
 	역시 돈을 낼수록 좋아집니다!
 
-![천장](../assets/2021-02-21-plan-of-moving-house/천장.png)
+![천장](/assets/2021-02-21-plan-of-moving-house/천장.png)
 	하지만, 낡은 것은 어쩔수가 없나봅니다..!!
 
 -----
@@ -298,15 +298,15 @@ changefreq: daily
 
 #### 비싼 방
 
-![그나마](../assets/2021-02-21-plan-of-moving-house/그나마.png)
+![그나마](/assets/2021-02-21-plan-of-moving-house/그나마.png)
 	월세 85에 관리비까지 추가로??  
 	그래도, 방 컨디션은 크게 나쁘진 않았다..
 
-![음](../assets/2021-02-21-plan-of-moving-house/음.png)
+![음](/assets/2021-02-21-plan-of-moving-house/음.png)
 	근데 솔직히, 이 방에 이 가격..?  
 	더 좋은게 있지 않을까..
 	
-![옵션](../assets/2021-02-21-plan-of-moving-house/옵션.png)
+![옵션](/assets/2021-02-21-plan-of-moving-house/옵션.png)
 	풀옵션이긴 한데 좀.. 비싸다
 
 -----
@@ -358,20 +358,20 @@ changefreq: daily
 15. 1000/80 해주신단다!!!!!!
 
 
-![아니방크기가무슨](../assets/2021-02-21-plan-of-moving-house/아니방크기가무슨.png)
+![아니방크기가무슨](/assets/2021-02-21-plan-of-moving-house/아니방크기가무슨.png)
 
 창문 ㅋㅋㅋㅋㅋ 넓은거봐라 ㅋㅋㅋㅋ 와 ㅋㅋㅋㅋㅋㅋ   
 방도 넓은거 느껴지나요? ㅋㅋㅋ
 
-![창문](../assets/2021-02-21-plan-of-moving-house/창문.png)
+![창문](/assets/2021-02-21-plan-of-moving-house/창문.png)
 
 뭔 ㅋㅋㅋ 밖에서 봐도 뭔 ㅋㅋㅋ 창문 크기가 진짜 미쳤음
 
-![작은방](../assets/2021-02-21-plan-of-moving-house/작은방.png)
+![작은방](/assets/2021-02-21-plan-of-moving-house/작은방.png)
 
 작은 방도 그동안 봤던 집들 중에서 제일 넓었던 것 같음.
 
-![배치좋아](../assets/2021-02-21-plan-of-moving-house/배치좋아.png)
+![배치좋아](/assets/2021-02-21-plan-of-moving-house/배치좋아.png)
 
 화장실 길어요 ㅋㅋㅋ
 근데 생각해보면 이런 배치가 오히려 수건 젖을 일도 없고, 오히려 더 괜찮은 것 같아요
@@ -399,7 +399,7 @@ changefreq: daily
 
 이사를 하기 전에 사전에 먼저 확인해야하는 것들은 예상 외로 많았다.
 
-![counting](../assets/2021-02-21-plan-of-moving-house/counting.gif)
+![counting](/assets/2021-02-21-plan-of-moving-house/counting.gif)
 
 ~~이것도 해야하고, 저것도 해야하고, 아차 이것도 해야했지 참 ... 등등~~
 

@@ -20,7 +20,7 @@ changefreq: daily
 
 **웹 호스팅**
 
-![dothome](../assets/2021-01-02-what-is-hosting/dothome.gif)
+![dothome](/assets/2021-01-02-what-is-hosting/dothome.gif)
 
 웹 호스팅은 여러 고객이 하나의 서버를 함께 사용하는 형태입니다.  
 하나의 서버를 나누어 쓰기 때문에 저렴하게 이용할 수 있고, 호스팅 업체의 통합 관리를 받기에 편리합니다.  
@@ -28,7 +28,7 @@ changefreq: daily
 
 **서버 호스팅**
 
-![IDC](../assets/2021-01-02-what-is-hosting/IDC.jpg)
+![IDC](/assets/2021-01-02-what-is-hosting/IDC.jpg)
 
 서버 호스팅은 고객이 단독 서버를 사용하는 형태입니다.  
 넓은 하드웨어 공간을 사용할 수 있고, 서버 운영/관리에 대한 직접적인 권한을 가질 수 있습니다.  
@@ -41,7 +41,7 @@ changefreq: daily
 
 **클라우드 서버**
 
-![AWS](../assets/2021-01-02-what-is-hosting/AWS.png)
+![AWS](/assets/2021-01-02-what-is-hosting/AWS.png)
 
 서버 호스팅을 가상화한 것으로, 가상 서버를 단독으로 사용할 수 있는 형태입니다.  
 고객이 필요할 때마다 서버 자원을 늘리거나 축소하여 유연하게 서버를 이용할 수 있습니다.  

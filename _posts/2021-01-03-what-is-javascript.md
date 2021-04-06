@@ -8,7 +8,7 @@ changefreq: daily
 
 ## 요약
 
-![javascript](../assets/2021-01-03-what-is-javascript/javascript.png)
+![javascript](/assets/2021-01-03-what-is-javascript/javascript.png)
 
 > 웹 브라우저 콘솔에서 Javascript를 사용하는 모습
 
@@ -33,7 +33,7 @@ ECMA스크립트는 쉽게 말해 자바스크립트의 표준화된 버전입�
 
 **넷스케이프에서의 시작**
 
-![netscape](../assets/2021-01-03-what-is-javascript/netscape.jpg)
+![netscape](/assets/2021-01-03-what-is-javascript/netscape.jpg)
 
 1993년, 일리노이 대학교 어배너-섐페인의 NCSA는 최초의 대중적인 그래픽 웹 브라우저인 NCSA 모자이크를 출시하였습니다.  
 

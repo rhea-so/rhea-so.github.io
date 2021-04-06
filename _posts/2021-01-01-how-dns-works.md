@@ -8,7 +8,7 @@ changefreq: daily
 
 ## 요약
 
-![what-is-dns](../assets/2021-01-01-how-dns-works/what-is-dns.png)
+![what-is-dns](/assets/2021-01-01-how-dns-works/what-is-dns.png)
 
 **도메인 네임 시스템**(Domain Name System, DNS)은 호스트의 도메인 이름을 호스트의 네트워크 주소로 바꾸거나 그 반대의 변환을 수행할 수 있도록 하기 위해 개발되었습니다.  
 
@@ -40,7 +40,7 @@ DNS 네임 서버는 데이터베이스에 대한 쿼리의 응답 정보와 함
 
 **도메인 이름 공간**
 
-![domain namespace](../assets/2021-01-01-how-dns-works/domain-namespace.png)
+![domain namespace](/assets/2021-01-01-how-dns-works/domain-namespace.png)
 
 도메인 이름 공간은 도메인 이름을 트리 형태로 구성한 것입니다.  
 트리의 각 노드는 0개 이상의 리소스 레코드(resource record)를 가집니다.  
@@ -55,7 +55,7 @@ DNS 네임 서버는 데이터베이스에 대한 쿼리의 응답 정보와 함
 
 **도메인 이름 형성**
 
-![domain name](../assets/2021-01-01-how-dns-works/domain-name.jpg)
+![domain name](/assets/2021-01-01-how-dns-works/domain-name.jpg)
 
 도메인 이름 형성에 관한 규칙은 RFC 1035, RFC 1123, RFC 2181에 정의되어 있습니다.  
 도메인 이름은 한 개 이상의 부분(레이블)로 이루어지고, 점으로 구분하여 붙여 씁니다.(예: example.com)
@@ -81,7 +81,7 @@ DNS 네임 서버는 데이터베이스에 대한 쿼리의 응답 정보와 함
 
 ### 작동 원리
 
-![how domain name service works](../assets/2021-01-01-how-dns-works/dns-works.png)
+![how domain name service works](/assets/2021-01-01-how-dns-works/dns-works.png)
 
 1.웹 브라우저에 www.naver.com을 입력하면 먼저 Local DNS에게 "www.naver.com"이라는 hostname"에 대한 IP 주소를 질의하여 Local DNS에 없으면 다른 DNS name 서버 정보를 받습니다 (Root DNS 정보 전달 받음)
 

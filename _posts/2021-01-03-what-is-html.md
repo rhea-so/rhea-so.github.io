@@ -8,7 +8,7 @@ changefreq: daily
 
 ## 요약
 
-![netscape](../assets/2021-01-03-what-is-html/netscape.gif)
+![netscape](/assets/2021-01-03-what-is-html/netscape.gif)
 
 > 1994년도 웹 브라우징 모습
 
@@ -28,7 +28,7 @@ HTML과 CSS 표준의 공동 책임자인 W3C는 명확하고 표상적인 마�
 
 **개발**
 
-![berners-lee](../assets/2021-01-03-what-is-html/berners-lee.jpeg)
+![berners-lee](/assets/2021-01-03-what-is-html/berners-lee.jpeg)
 
 > 팀 버너스리 - World Wide Web의 창시자
 

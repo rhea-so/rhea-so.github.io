@@ -28,7 +28,7 @@ changefreq: daily
 
 ### 종류
 
-![TLD](../assets/2021-01-01-how-dns-works/TLD.jpg)
+![TLD](/assets/2021-01-01-how-dns-works/TLD.jpg)
 
 도메인 네임은 그 최상위 도메인이 암시하는 관리 기관 및 등록 요건에 따라 다음과 같이 나뉩니다.
 

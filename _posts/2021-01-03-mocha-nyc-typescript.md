@@ -28,11 +28,11 @@ TDD가 뭐고, Mocha와 NYC를 이용해 어떻게 Typescript 코드를 TDD 할 
 
 즉 “테스트를 염두에 둔 프로그램 개발 방법”입니다.
 
-![non-tdd](../assets/2021-01-03-mocha-nyc-typescript/non-tdd.png)
+![non-tdd](/assets/2021-01-03-mocha-nyc-typescript/non-tdd.png)
 
 > 기존의 개발 프로세스
 
-![use-tdd](../assets/2021-01-03-mocha-nyc-typescript/use-tdd.png)
+![use-tdd](/assets/2021-01-03-mocha-nyc-typescript/use-tdd.png)
 
 > 테스트 주도 개발 프로세스
 
@@ -64,7 +64,7 @@ TDD 개발을 하면서 얻을 수 있는 큰 장점 중 하나로 보입니다.
 
 그리고 미리 테스트 시나리오를 작성해봄으로써 코드 개발 전 기능을 구현하기 위한 예외 상황들을 미리 확인해보고 조사하게 되는 효과가 발생하여 예외 코드를 작성하기 쉬워집니다.
 
-![결함](../assets/2021-01-03-mocha-nyc-typescript/결함은-일찍-찾을수록-고치는-비용이-적게-든다.jpg)
+![결함](/assets/2021-01-03-mocha-nyc-typescript/결함은-일찍-찾을수록-고치는-비용이-적게-든다.jpg)
 
 > 결함 수정 비용에 대한 예시(출처: [https://www.slideshare.net/koreakihoon/tdd-112099012](https://www.slideshare.net/koreakihoon/tdd-112099012), TDD 관련 발표 자료)
 
@@ -76,7 +76,7 @@ TDD 개발을 하면서 얻을 수 있는 큰 장점 중 하나로 보입니다.
 
 하지만 TDD 개발로 인해 각각의 단위 테스트를 진행하게 된다면 영역을 분할하여 쉽게 찾아낼 수 있을 것입니다.
 
-![tdd-cycle](../assets/2021-01-03-mocha-nyc-typescript/tdd-cycle.png)
+![tdd-cycle](/assets/2021-01-03-mocha-nyc-typescript/tdd-cycle.png)
 
 >  TDD Cycle in Unit Test(출처: [http://memee.github.io/tdd/#/7](http://memee.github.io/tdd/#/7), TDD 관련 발표 자료)
 
@@ -101,9 +101,9 @@ TDD 개발로 인해 항상 그 테스트 요소들이 사용자 관점으로 �
 
 #### **Mocha가 무엇인가요?**
 
-![mocha](../assets/2021-01-03-mocha-nyc-typescript/mocha-1.png)
+![mocha](/assets/2021-01-03-mocha-nyc-typescript/mocha-1.png)
 
-![mocha](../assets/2021-01-03-mocha-nyc-typescript/mocha-2.png)
+![mocha](/assets/2021-01-03-mocha-nyc-typescript/mocha-2.png)
 
 Mocha는 Node.js 테스트 프레임워크로써, Javascript 코드의 단위 테스트 기능을 제공합니다.
 
@@ -169,7 +169,7 @@ describe("Test suite", function () {
 });
 ```
 
-![mocha](../assets/2021-01-03-mocha-nyc-typescript/mocha-6.png)
+![mocha](/assets/2021-01-03-mocha-nyc-typescript/mocha-6.png)
 
 > 위 이미지처럼, 테스트 코드를 작성합니다.
 
@@ -181,24 +181,24 @@ mocha test  # test 폴더에 있는 테스트 코드들을 전부 실행 (하위
 mocha dist/test  # dist/test 폴더 ...
 ```
 
-![mocha](../assets/2021-01-03-mocha-nyc-typescript/mocha-7.png)
+![mocha](/assets/2021-01-03-mocha-nyc-typescript/mocha-7.png)
 
 > 테스트시 위와 같이 터미널에 결과가 나옵니다
 
-![mocha](../assets/2021-01-03-mocha-nyc-typescript/mocha-8.png)
+![mocha](/assets/2021-01-03-mocha-nyc-typescript/mocha-8.png)
 
 package.json에 코드를 등록해놓으면 보다 편하게 사용할 수 있습니다.
 
 #### **VSCode Extension**
 
-![mocha](../assets/2021-01-03-mocha-nyc-typescript/mocha-5.png)
+![mocha](/assets/2021-01-03-mocha-nyc-typescript/mocha-5.png)
 
 VSCode에 Mocha를 사용하기 편하게 Explorer 형식으로 제공해주는 Extension이 존재합니다.
 
 [https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-mocha-test-adapter)
 
 
-![mocha](../assets/2021-01-03-mocha-nyc-typescript/mocha-4.png)
+![mocha](/assets/2021-01-03-mocha-nyc-typescript/mocha-4.png)
 
 위 Extension을 설치하게 되면, VSCode에 새로운 메뉴가 생기고, 메뉴에서 위 사진처럼 테스트를 원클릭으로 편하게 테스트할 수 있습니다.
 
@@ -236,21 +236,21 @@ nyc --check-coverage --lines 90 --per-file  # 하나 이상의 파일의 코드 
 nyc --reporter html mocha  # 테스트 커버리지 결과를 HTML로 보여줍니다
 ```
 
-![nyc-2](../assets/2021-01-03-mocha-nyc-typescript/nyc-2.png)
+![nyc-2](/assets/2021-01-03-mocha-nyc-typescript/nyc-2.png)
 
 > Terminal로 출력한 경우
 
-![nyc-1](../assets/2021-01-03-mocha-nyc-typescript/nyc-1.png)
+![nyc-1](/assets/2021-01-03-mocha-nyc-typescript/nyc-1.png)
 
 > HTML로 출력한 경우
 
-![nyc-3](../assets/2021-01-03-mocha-nyc-typescript/nyc-3.png)
+![nyc-3](/assets/2021-01-03-mocha-nyc-typescript/nyc-3.png)
 
 > 내부 코드들의 모든 분기를 다 테스트해서 보여줍니다
 
 ### Mocha와 NYC를 사용한 TDD Flow
 
-![scenario](../assets/2021-01-03-mocha-nyc-typescript/scenario.png)
+![scenario](/assets/2021-01-03-mocha-nyc-typescript/scenario.png)
 
 1. 개발 목표 설정
 2. 테스트 코드 작성

@@ -17,7 +17,7 @@ changefreq: daily
 
 ### 브라우저의 기본 구조
 
-![browser-1](../assets/2021-01-01-how-browser-works/browser-1.png)
+![browser-1](/assets/2021-01-01-how-browser-works/browser-1.png)
 
 * 유저 인터페이스 : 이전, 다음, 새로고침, 북마크 같이 요청한 페이지는 보여주는 부분 외에 유저에게 동일하게 보이는 부분입니다.
 * 브라우저 엔진 : 유저 인터페이스와 렌더링 엔진 사이에 쿼리를 전달할 수 있게 조작을 담당합니다.
@@ -31,13 +31,13 @@ changefreq: daily
 
 파이어폭스는 모질라에서 직접 만든 게코(Gecko) 엔진을 사용, 사파리와 크롬은 웹킷(Webkit) 엔진(오픈소스 엔진)을 사용합니다.
 
-![browser-2](../assets/2021-01-01-how-browser-works/browser-2.png)
+![browser-2](/assets/2021-01-01-how-browser-works/browser-2.png)
 
 HTML를 돔 트리로 파싱 -> 렌더 트리 구축 -> 렌더 트리 배치 -> 렌더 트리 그리기
 
 **동작 과정**
 
-![browser-3](../assets/2021-01-01-how-browser-works/browser-3.png)
+![browser-3](/assets/2021-01-01-how-browser-works/browser-3.png)
 
 HTML, CSS 각각의 파서가 있고 HTML은 각 태그들로 DOM트리를 구성, CSS도 스타일 규칙에 맞게 파싱된 후 같이 '렌더 트리'를 생성합니다.  
 그 후에 배치가 시작되는데 이것은 각 노드가 화면의 정확한 위치에 표시되는 것을 의미합니다.   
@@ -70,7 +70,7 @@ DOM은 마크업과 1:1의 관계를 맺습니다.
 </html>
 ```
 
-![html-1](../assets/2021-01-01-how-browser-works/html-1.png)
+![html-1](/assets/2021-01-01-how-browser-works/html-1.png)
 
 
 **CSS 파싱**
@@ -78,7 +78,7 @@ DOM은 마크업과 1:1의 관계를 맺습니다.
 HTML과는 다르게 CSS는 문맥 자유 문법입니다.  
 CSS 파일은 스타일 시트 객체로 파싱되고 각 객체는 CSS 규칙을 포함합니다.  
 
-![css-1](../assets/2021-01-01-how-browser-works/css-1.png)
+![css-1](/assets/2021-01-01-how-browser-works/css-1.png)
 
 ### 스크립트와 스타일 시트의 진행 순서
 

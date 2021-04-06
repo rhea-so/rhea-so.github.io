@@ -1,3 +1,17 @@
+remote_theme: samarsault/plainwhite-jekyll
+theme: plainwhite
+
+plainwhite:
+  dark_mode: true
+  name: Adam Denisov
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: samarsault
+    github: samarsault
+    linkedIn: in/samarsault # format: locale/username
+
 # Site settings
 title: 2021 Dev
 url: "http://rhea-so.github.io"
