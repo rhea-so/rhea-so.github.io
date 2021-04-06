@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /privateData/
-
-Sitemap: http://rhea-so.github.io/sitemap.xml
