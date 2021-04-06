@@ -7,6 +7,6 @@ rm -rf vendor
 
 git add -fA
 git commit --allow-empty -m "$(git log post -1 --pretty=%B)"
-git push --force origin main
+git push -f origin main
 
 echo "deployed successfully"
