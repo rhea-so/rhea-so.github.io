@@ -8,13 +8,6 @@ rm -rf vendor
 git add -fA
 git commit --allow-empty -m "$(git log post -1 --pretty=%B)"
 
-git checkout -b build post
-git checkout main
-git pull
-git checkout build
-git merge --strategy=ours master
-git checkout master
-git merge --no-ff feature
-git push
+git push --force origin post:master
 
 echo "deployed successfully"
