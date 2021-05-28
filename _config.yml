@@ -4,21 +4,20 @@ theme: plainwhite
 plainwhite:
   dark_mode: true
   name: JeongHyeon Kim
-  tagline: SoftwareEngineer
+  tagline: 열심히 공부하는 중!
   date_format: "%b %-d, %Y"
 
   social_links:
     twitter: rhea_soft
     github: rhea-so
-    # linkedIn: in/samarsault # format: locale/username
 
 # Site settings
-title: 2021 Dev
+title: 하고 싶은 걸 하는 블로그
 url: "http://rhea-so.github.io"
 baseurl: ""
 timezone: Asia/Seoul
 description: >-
-  Junior Software Engineer Blog
+  하고 싶은 걸 하는 블로그
 
 excerpt_separator: <!--more-->
 
