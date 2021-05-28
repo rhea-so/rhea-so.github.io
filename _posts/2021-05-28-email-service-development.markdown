@@ -86,15 +86,81 @@ Slack을 이용해 채팅 하나로 서버를 업데이트 할 수 있으면 좋
 
 ## NodeMailer를 사용한 이메일 전송
 
-NodeJS에서 
+```typescript
+import nodeMailer from 'nodemailer';
+const transporter = nodeMailer.createTransport({
+	service: 'gmail',
+	host: 'smtp.gmail.com',
+	auth: {
+		user: process.env.GMAIL_ID,
+		pass: process.env.GMAIL_PASSWORD
+	}
+});
+
+transporter.sendMail(
+	{
+		from: process.env.GMAIL_ID,
+		to: message.to,
+		subject: message.subject,
+		html: message.html
+	},
+	
+	(error, info) => {
+		if (error) {
+			reject(error);
+		} else {
+			resolve(info);
+		}
+	});
+```
 
 -----
 
 ## RabbitMQ 사용 방법
 
+```typescript
+import { RabbitMQ } from 'rhea-rabbitmq'; // NPM에 없습니다. 개인 NPM 저장소에 올렸습니다.
+const client = new RabbitMQ.Client({
+	serverAddress: process.env.RABBITMQ_ADDRESS as string,
+	username: process.env.RABBITMQ_USERNAME as string,
+	password: process.env.RABBITMQ_PASSWORD as string,
+	vhost: process.env.RABBITMQ_VHOST as string
+});
+
+
+async function main() {
+	await client.connect();
+
+	// 이미 Queue가 생성되어있는 경우는, 아무 일도 하지 않습니다.
+	client.createQueue(process.env.RABBITMQ_QUEUE as string);
+
+	client.dequeue(process.env.RABBITMQ_QUEUE as string, async (message: IEmailRequest) => {
+		// 이메일 전송
+	});
+
+	await client.enqueue(process.env.RABBITMQ_QUEUE as string, {
+		// 전달할 데이터
+	});
+}
+
+main();
+```
+
 -----
 
 ## Graceful Shutdown
+
+```typescript
+async function gracefulShutdown() {
+	await client.free();
+	setTimeout(async () => {
+		process.exit(0);
+	}, 5000); // 5초 안에 남아있는 모든 이메일 전송이 완료되는 것으로 판단함
+}
+
+process.on('SIGTERM', gracefulShutdown);
+process.on('SIGINT', gracefulShutdown);
+```
 
 -----
 
