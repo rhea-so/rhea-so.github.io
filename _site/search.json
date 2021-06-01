@@ -1,0 +1,15 @@
+[
+  
+    {
+      "title"    : "이메일 서비스 개발",
+      "title-lower"    : "이메일 서비스 개발",
+      "sub-titile" : "",
+      "sub-titile-lower" : "",
+      "categories" : "개발",
+      "tags"     : "",
+      "url"      : "/%EA%B0%9C%EB%B0%9C/2021/05/28/email-service-development.html",
+      "date"     : "2021-05-28 00:00:00 +0900",
+      "content"     : "필요성이메일로 뉴스나, 전세계 트렌드, 컨퍼런스 일정등을 알려주는 서비스를 만들고 싶었습니다.이를 만드려고 보니, 이메일을 보내주는 서비스를 먼저 만들어야 했습니다.목표안정적인 이메일 서비스 개발소스 코드  https://github.com/rhea-so/EmailService개발 도구  VSCode v1.56.2  NodeJS v12 Erbium  ..."
+    } 
+  
+]

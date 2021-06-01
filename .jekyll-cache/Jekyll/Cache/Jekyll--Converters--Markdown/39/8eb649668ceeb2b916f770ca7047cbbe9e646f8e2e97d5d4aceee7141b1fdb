@@ -1,0 +1,256 @@
+I"�><h2 id="필요성">필요성</h2>
+
+<p>이메일로 뉴스나, 전세계 트렌드, 컨퍼런스 일정등을 알려주는 서비스를 만들고 싶었습니다.<br />
+이를 만드려고 보니, 이메일을 보내주는 서비스를 먼저 만들어야 했습니다.</p>
+
+<h2 id="목표">목표</h2>
+
+<p><strong>안정적인</strong> 이메일 서비스 개발</p>
+
+<h2 id="소스-코드">소스 코드</h2>
+
+<ul>
+  <li><a href="https://github.com/rhea-so/EmailService">https://github.com/rhea-so/EmailService</a></li>
+</ul>
+
+<hr />
+
+<h2 id="개발-도구">개발 도구</h2>
+
+<ul>
+  <li>VSCode v1.56.2</li>
+  <li>NodeJS v12 Erbium
+    <ul>
+      <li>NodeMailer v6.6.1</li>
+    </ul>
+  </li>
+  <li>Typescript v4.3.2
+    <ul>
+      <li><a href="https://github.com/rhea-so/Typescript">Repository Template</a></li>
+    </ul>
+  </li>
+  <li>RabbitMQ v3.8.9</li>
+  <li>Docker</li>
+  <li>Kubernetes</li>
+</ul>
+
+<hr />
+
+<h2 id="아키텍처-구상">아키텍처 구상</h2>
+
+<p><img src="/images/email-service-구상-1.png" /></p>
+
+<h3 id="1-서버를-이메일-전송-서버-요청-수신-서버로-분리했습니다">1. 서버를 이메일 전송 서버, 요청 수신 서버로 분리했습니다.</h3>
+
+<p>하나의 서버에서 모든 것을 처리하지 않습니다. 각자 작은 일들 하나씩 맡아 처리합니다.</p>
+
+<p>저는 Micro Service Architecture를 좋아합니다.</p>
+
+<p>나중에 “이메일 전송 부분”에 수정이 있거나 “요청 수신 부분”에 수정이 있을때, 다른 서버들에게 미치는 영향을 최소화 할 수 있기 때문입니다.</p>
+
+<p>무중단 배포에도 용이하고, 오토 스케일링도 유연하게 할 수 있어서 좋습니다.</p>
+
+<h3 id="2-message-queue를-사용해-서버-간-결합을-느슨하게-했습니다">2. Message Queue를 사용해 서버 간 결합을 느슨하게 했습니다.</h3>
+
+<p>“이메일 전송 요청”과 “이메일 전송”은 강한 결합을 띄고 있습니다. (n대 n)</p>
+
+<p>“이메일 전송 요청”이 없으면 “이메일 전송”은 실행 될 수 없습니다.</p>
+
+<p>즉, “요청 수신 서버”와 “이메일 전송 서버” 간에는 통신이 필요합니다.</p>
+
+<p>HTTP Request로 통신을 할 수 있습니다만, 전 아닌 것 같다고 판단했습니다.</p>
+
+<ol>
+  <li>Circuit Breaking을 직접 구현해야합니다.
+    <ol>
+      <li>구현한다고 하더라도, HTTP Request를 보내는 서버가 장애 상황 조치 중 죽어버리면 의미가 없습니다.</li>
+      <li>모든 “이메일 전송 서버”가 죽어있다면, “요청 서버”에 부하가 이메일 요청이 들어올수록 점점 심해집니다.</li>
+    </ol>
+  </li>
+  <li>단일 서버로 띄워서 통신한다면, 단일 End Point를 사용하면 되지만 Scaling을 한다면 Load Balancer를 만들어줘야 합니다
+    <ol>
+      <li>Load Balancer는 비쌉니다..</li>
+      <li>“이메일 전송 서버”에 Load Balancer를 붙히는 이유가 “요청 수신 서버”와 통신하기 위해서인데. 기회비용이 너무 큽니다.</li>
+    </ol>
+  </li>
+  <li>이메일을 보내는 중에 에러가 발생한 경우, 이메일이 증발됩니다.</li>
+  <li>장애 상황 대처가 힘듭니다.</li>
+</ol>
+
+<p>–&gt; 위 같은 문제들로 인해, Message Queue를 사용하기로 했습니다.</p>
+
+<p>관리자가 이메일 등록기에 요청을 보내면 이를 RabbitMQ로 보내고, 이메일 전송기가 RabbitMQ로부터 이메일 요청을 뽑아와 전송하는 구조입니다.</p>
+
+<p><img src="/images/email-service-구상-2.png" width="500" /></p>
+
+<p>이메일을 등록하는 부분과 전송하는 부분을 분리한 이유는 다음과 같습니다.</p>
+
+<ul>
+  <li>Kubernetes Deployment를 분리함으로써 장애 피해를 최소화 할 수 있습니다.
+    <ul>
+      <li>이메일을 전송하는 로직에서 장애가 발생해도, 이메일 등록에는 문제가 없습니다.</li>
+    </ul>
+  </li>
+  <li>수정이 필요한 서버만 업데이트하면 되기 때문에 전체적으로 업데이트로 인한 서비스 불안정 요소를 최소화 할 수 있습니다.
+    <ul>
+      <li>전송 로직에 수정이 필요하면, 전송하는 서버만 재부팅하면 됩니다.</li>
+    </ul>
+  </li>
+  <li>Auto-Scaling을 좀 더 유연하게 할 수 있습니다.
+    <ul>
+      <li>이메일 전송에 부하가 심하면, 이메일 전송 서버만 늘리면 되고, 이메일 등록에 부하가 심하면, 이메일 등록 서버만 늘리면 됩니다.</li>
+    </ul>
+  </li>
+  <li>변경을 유연하게 대처할 수 있습니다.
+    <ul>
+      <li>완전 새로운 이메일 등록 서버를 만들어도, 이메일 전송 서버는 그대로 사용할 수 있습니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>위 구조를 보면, RabbitMQ(Message Queue)가 서버들 사이에 위치해 있습니다.</p>
+
+<p>이메일 등록 서버와 전송 서버 사이를 HTTP나 Socket.io 등의 통신이 아닌 Message Queue로 연결한 이유는 다음과 같습니다.</p>
+
+<ul>
+  <li>Loose Coupling
+    <ul>
+      <li>전송 서버와 등록 서버는 로직적으로 서로가 엮여있지 않기 때문에, 서비스 자체의 유연성과 재사용성을 늘릴 수 있습니다.</li>
+    </ul>
+  </li>
+  <li>Horizontal Scaling
+    <ul>
+      <li>여러 대의 서버가 하나의 Queue를 바라보도록 구성하면 처리할 데이터가 많아져도 각 서버는 자신의 처리량에 맞게 이메일 요청을 가져와 처리할 수 있습니다.</li>
+    </ul>
+  </li>
+  <li>데이터 손실 방지
+    <ul>
+      <li>이메일 전송 처리를 하는 도중에 갑작스럽게 서버가 죽은 경우, 이에 대한 요청이 다시 Queue로 돌아가기 때문에 장애 조치가 가능합니다.</li>
+      <li>요청이 무시되는 Case를 제거할 수 있습니다.</li>
+    </ul>
+  </li>
+  <li>부하 분산
+    <ul>
+      <li>처리해야 할 이메일들을 Queue에 넣어두고 이메일 전송 서버는 자신이 동시에 처리할 수 있는 양에 따라 하나의 이메일 전송. 전송이 끝나면 다음에 처리할 이메일 정보를 Queue에서 가져와 처리하면 됩니다.</li>
+      <li>많은 요청으로 인한 서버 다운이 일어나지 않습니다. 딱 서버 본인이 가능한 만큼만 이메일 정보를 전달합니다.</li>
+    </ul>
+  </li>
+  <li>통신에 대한 이점
+    <ul>
+      <li>failover에 대한 코드를 안짜도 됩니다.</li>
+      <li>Queue에 넣고 빼는 코드만 짜면 되기 때문에 굉장히 단순합니다.</li>
+    </ul>
+  </li>
+  <li>데이터의 가시화
+    <ul>
+      <li>전 Queue를 통해 데이터를 주고 받는게, 코드로 표현했을때 꽤나 괜찮아보였습니다. 어떤 데이터를 주고 받는지를 한 눈에 명확하게 보였습니다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="/images/email-service-구상-3.png" width="600" /></p>
+
+<p>Slack을 이용해 채팅 하나로 서버를 업데이트 할 수 있으면 좋을 것 같습니다.
+서버를 업데이트하기 위해 매번 VM에 접속해서 명령어를 치는건 너무 불편하니까..</p>
+
+<p>내가 편한게 최고니까.</p>
+
+<hr />
+
+<h2 id="nodemailer를-사용한-이메일-전송">NodeMailer를 사용한 이메일 전송</h2>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">nodeMailer</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">nodemailer</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">transporter</span> <span class="o">=</span> <span class="nx">nodeMailer</span><span class="p">.</span><span class="nx">createTransport</span><span class="p">({</span>
+	<span class="na">service</span><span class="p">:</span> <span class="dl">'</span><span class="s1">gmail</span><span class="dl">'</span><span class="p">,</span>
+	<span class="na">host</span><span class="p">:</span> <span class="dl">'</span><span class="s1">smtp.gmail.com</span><span class="dl">'</span><span class="p">,</span>
+	<span class="na">auth</span><span class="p">:</span> <span class="p">{</span>
+		<span class="na">user</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">GMAIL_ID</span><span class="p">,</span>
+		<span class="na">pass</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">GMAIL_PASSWORD</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">transporter</span><span class="p">.</span><span class="nx">sendMail</span><span class="p">(</span>
+	<span class="p">{</span>
+		<span class="na">from</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">GMAIL_ID</span><span class="p">,</span>
+		<span class="na">to</span><span class="p">:</span> <span class="nx">message</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span>
+		<span class="na">subject</span><span class="p">:</span> <span class="nx">message</span><span class="p">.</span><span class="nx">subject</span><span class="p">,</span>
+		<span class="na">html</span><span class="p">:</span> <span class="nx">message</span><span class="p">.</span><span class="nx">html</span>
+	<span class="p">},</span>
+	
+	<span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">info</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+			<span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+			<span class="nx">resolve</span><span class="p">(</span><span class="nx">info</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">});</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="rabbitmq-사용-방법">RabbitMQ 사용 방법</h2>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RabbitMQ</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">rhea-rabbitmq</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// NPM에 없습니다. 개인 NPM 저장소에 올렸습니다.</span>
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RabbitMQ</span><span class="p">.</span><span class="nx">Client</span><span class="p">({</span>
+	<span class="na">serverAddress</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">RABBITMQ_ADDRESS</span> <span class="k">as</span> <span class="kr">string</span><span class="p">,</span>
+	<span class="na">username</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">RABBITMQ_USERNAME</span> <span class="k">as</span> <span class="kr">string</span><span class="p">,</span>
+	<span class="na">password</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">RABBITMQ_PASSWORD</span> <span class="k">as</span> <span class="kr">string</span><span class="p">,</span>
+	<span class="na">vhost</span><span class="p">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">RABBITMQ_VHOST</span> <span class="k">as</span> <span class="kr">string</span>
+<span class="p">});</span>
+
+
+<span class="k">async</span> <span class="kd">function</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">connect</span><span class="p">();</span>
+
+	<span class="c1">// 이미 Queue가 생성되어있는 경우는, 아무 일도 하지 않습니다.</span>
+	<span class="nx">client</span><span class="p">.</span><span class="nx">createQueue</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">RABBITMQ_QUEUE</span> <span class="k">as</span> <span class="kr">string</span><span class="p">);</span>
+
+	<span class="nx">client</span><span class="p">.</span><span class="nx">dequeue</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">RABBITMQ_QUEUE</span> <span class="k">as</span> <span class="kr">string</span><span class="p">,</span> <span class="k">async</span> <span class="p">(</span><span class="nx">message</span><span class="p">:</span> <span class="nx">IEmailRequest</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="c1">// 이메일 전송</span>
+	<span class="p">});</span>
+
+	<span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">enqueue</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">RABBITMQ_QUEUE</span> <span class="k">as</span> <span class="kr">string</span><span class="p">,</span> <span class="p">{</span>
+		<span class="c1">// 전달할 데이터</span>
+	<span class="p">});</span>
+<span class="p">}</span>
+
+<span class="nx">main</span><span class="p">();</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="graceful-shutdown">Graceful Shutdown</h2>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">gracefulShutdown</span><span class="p">()</span> <span class="p">{</span>
+	<span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">free</span><span class="p">();</span>
+	<span class="nx">setTimeout</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+		<span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+	<span class="p">},</span> <span class="mi">5000</span><span class="p">);</span> <span class="c1">// 5초 안에 남아있는 모든 이메일 전송이 완료되는 것으로 판단함</span>
+<span class="p">}</span>
+
+<span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">SIGTERM</span><span class="dl">'</span><span class="p">,</span> <span class="nx">gracefulShutdown</span><span class="p">);</span>
+<span class="nx">process</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">SIGINT</span><span class="dl">'</span><span class="p">,</span> <span class="nx">gracefulShutdown</span><span class="p">);</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="이메일-전송-서버-구현">이메일 전송 서버 구현</h2>
+
+<h3 id="수신-차단-목록-관리">수신 차단 목록 관리</h3>
+
+<hr />
+
+<h2 id="이메일-등록-서버-구현">이메일 등록 서버 구현</h2>
+
+<hr />
+
+<h2 id="kubernetes-배포">Kubernetes 배포</h2>
+
+<hr />
+
+<h2 id="서비스-동작">서비스 동작</h2>
+
+<hr />
+
+<h2 id="소감">소감</h2>
+:ET
